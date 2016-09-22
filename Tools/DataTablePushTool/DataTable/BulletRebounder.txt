@@ -1,0 +1,5 @@
+#	子弹反弹器配置表					
+#	Id		ResourceName	PositionX	PositionY	Angle
+#	int		string	float	float	float
+#	编号	策划备注	资源名称	坐标位置X	坐标位置Y	朝向
+	1	测试	TestBulletRebounder	19	-10	90

@@ -1,0 +1,15 @@
+#	角色 Buff 特效配置表							
+#	Id		EffectPath0	AttachPointPath0	EffectPath1	AttachPointPath1	EffectPath2	AttachPointPath2
+#	int		string	string	string	string	string	string
+#	特效编号	策划备注	第一个特效路径	特效1挂在entity哪层	第2个特效路径	特效2挂在entity哪层	第3个特效路径	特效3挂在entity哪层
+	1	示例	Characters/Players/KingArthur/effects_hero_001_yasewang_001_combo1					
+	2	示例	Characters/Players/KingArthur/effects_hero_001_yasewang_001_combo2					
+	101	电击减速buff	Characters/Debuff/default_decelerate	hitpoint				
+	1030611	卡特琳娜大狙残留火焰标记	Characters/Debuff/default_burn	hitpoint				
+	1030711	卡特琳娜大狙残留火焰标记	Characters/Debuff/default_burn	hitpoint				
+	1110801	杰克恶魔形态buff	Characters/Players/Jack/effects_hero_001_jack_001_skill3_1_loop					
+	1170801	项羽鬼雄形态特效	Characters/Players/Xiangyu/effects_hero_001_xiangyu_001_skill3_hand	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/hand_right				
+	1140601	埃及艳后火药BUFF	Characters/Debuff/debuff_AijiyanhouSkill1					
+	1190601	噬毒者毒雾BUFF	Characters/Players/Penduzhe/effects_hero_001_penduzhe_001_buff					
+	10012	3级副本BOSS防御BUFF	Characters/Buff/effects_monster_buff_defense					
+	10013	5级副本BOSS攻击BUFF	Characters/Buff/effects_monster_buff_attack					

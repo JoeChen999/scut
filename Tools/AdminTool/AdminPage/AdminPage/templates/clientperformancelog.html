@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}{% endblock %}
+    {% block content %}
+    <p class="title">Client Performance Logs</p>
+    <form method="post">
+    <table id="configTable" border="2" style="color:#7a8f9f">
+       <tr>
+           <td>Choose a type</td>
+           <td>
+               <select name="type">
+                   <option value="0">0</option>
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+               </select>
+           </td>
+       </tr>
+       <tr>
+           <td>Input condition</td>
+           <td><input type="text" name="condition"></td>
+       </tr>
+       <tr>
+           <td colspan="2" align="center"><input type="submit"></td>
+       </tr>
+    </table>
+    </form>
+    {% endblock %}
+</body>
+</html>

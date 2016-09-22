@@ -1,0 +1,6 @@
+#	运营活动配置表								
+#	Id		ActivityName	ActivityDesc	ActivityIconId	ActivityUIPath	AutoShow	StartTime	EndTime
+#	int		string	string	int	string	bool	DateTime	DateTime
+#	活动编号	策划备注	活动名称	活动描述	活动图标编号	活动界面路径	每天首次登录是否弹出	活动开启时间	活动结束时间
+	1	七日登录	OA_NAME_WEEKLY_SIGN_IN	OA_DESC_WEEKLY_SIGN_IN	400001	Lobby/OperationActivity/DailyLoginTabContent	FALSE	2016/4/22 0:00	2016/5/1
+	2	月登录	OA_NAME_MONTHLY_SIGN_IN	OA_DESC_MONTHLY_SIGN_IN	400002		FALSE	2016/4/23	2016/5/1

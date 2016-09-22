@@ -1,0 +1,26 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主鍵	策劃備註	字典內容，可使用轉義符
+	PROPAGANDA_BATTLE_001		去我們身後的戰場保護自由聖旗，一切為自由而戰。
+	PROPAGANDA_BATTLE_002		敵襲！敵襲！一起應戰！
+	PROPAGANDA_BATTLE_003		這裡暫時安全，趕緊去幫助其他英靈戰勝異魔！
+	PROPAGANDA_BATTLE_004		哈哈哈哈！梅林，憑你就想擋住我嗎？去死吧！
+	PROPAGANDA_BATTLE_005		區區異魔，看我破你詭計！
+	PROPAGANDA_BATTLE_006		闖入者？小的們，幹掉他！
+	PROPAGANDA_BATTLE_007		等候多時了！
+	PROPAGANDA_BATTLE_009		一群廢物，最後還得我自己動手。
+	PROPAGANDA_BATTLE_010		你的好運到此結束了！
+	PROPAGANDA_BATTLE_011		拿開你的髒手！那是我的寶藏！
+	PROPAGANDA_BATTLE_012		嘁！區區一個分身，看我滅了你！
+	PROPAGANDA_BATTLE_013		聖潔的法靈啊，淨化吧！救贖吧！
+	PROPAGANDA_BATTLE_014		這片暗淡的世界，只因有你，我願化作一瞬的煙火！
+	PROPAGANDA_BATTLE_015		我本陰影，一起，歸於黑暗！
+	PROPAGANDA_BATTLE_016		堂堂正正，一較高下！
+	PROPAGANDA_BATTLE_017		堂堂正正，一較高下！
+	PROPAGANDA_BATTLE_018		吾王在上，容我再添榮光！
+	PROPAGANDA_BATTLE_019		打敗你，人民就能過上好日子嗎？
+	PROPAGANDA_BATTLE_020		為了自由，聖戰吧！
+	PROPAGANDA_BATTLE_021		嗷！我……不會……死！不會！！
+	PROPAGANDA_BATTLE_022		大人！小女子來助你！
+	PROPAGANDA_STORY_001		亞瑟王

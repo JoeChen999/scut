@@ -1,0 +1,7 @@
+message Gears
+{
+    required int32 Id = 1;
+    required int32 TypeId = 2;
+    required int32 Level = 3;
+    required bool Removed= 4;
+}

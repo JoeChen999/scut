@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}数据表上传{% endblock %}
+    {% block content %}
+    <p class="title">DataTable Upload</p>
+    <form method="post" enctype="multipart/form-data" >
+        <table border="2" style="color:#7a8f9f">
+            <tr>
+                <td>FILE:</td>
+                <td><input type='file' name='file'></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="upload"></td>
+            </tr>
+        </table>
+    </form>
+    <p style="color:#FF0000">{{info}}</p>
+    {% endblock %}
+</body>
+</html>

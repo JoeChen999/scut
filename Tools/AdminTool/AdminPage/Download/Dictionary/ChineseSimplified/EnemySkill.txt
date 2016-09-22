@@ -1,0 +1,6 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	SKILL_NAME_5010101		魔化轻步兵挥砍
+	SKILL_NAME_5020101		魔化弓箭手射箭

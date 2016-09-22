@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Publisher>
+  <CheckServerListUri>http://master.skfz.antinc.cn:8000/static/serverlist.txt</CheckServerListUri>
+  <LoginUri>http://master.skfz.antinc.cn:8000/masterserver/player/login</LoginUri>
+</Publisher>

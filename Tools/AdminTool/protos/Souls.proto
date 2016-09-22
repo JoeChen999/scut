@@ -1,0 +1,6 @@
+message Souls
+{
+    required int32 Id = 1;
+    required int32 TypeId = 2;
+    required bool Removed= 4;
+}

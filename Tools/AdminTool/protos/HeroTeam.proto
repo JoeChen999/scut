@@ -1,0 +1,5 @@
+message HeroTeam
+{
+    required int32 PlayerId = 1;
+    required string Team = 2;
+}

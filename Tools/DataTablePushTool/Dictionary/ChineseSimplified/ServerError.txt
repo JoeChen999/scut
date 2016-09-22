@@ -1,0 +1,13 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	ERROR_MESSAGE_1010		您的私聊对象不在线哦~
+	ERROR_MESSAGE_1013		您的包裹已经满了，请去背包清理后再继续操作。
+	ERROR_MESSAGE_1014		您有道具达到了堆叠上限，请去背包清理后再继续操作。
+	ERROR_MESSAGE_1015		无法打开邮件。
+	ERROR_MESSAGE_2011		您才给 TA 发送了好友请求哦~
+	ERROR_MESSAGE_10000		服务器提了一个问题，我们正在加紧修复。
+	ERROR_MESSAGE_1006		今日免费领取次数已达上限！
+	ERROR_MESSAGE_1011		今日挑战次数已达上限！
+	ERROR_MESSAGE_1003		非常抱歉，您的体力已经耗尽，请等待回复或直接购买！

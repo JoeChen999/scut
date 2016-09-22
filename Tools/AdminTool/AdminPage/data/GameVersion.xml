@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GameVersion LatestVersion="0.1.0">
+  <AllowedVersion Version="0.1.0" Resource="GameResourceVersion_0_1_0.xml" VerifiedIOSInternalVersion="199" VerifiedAndroidInternalVersion="51" />
+</GameVersion>

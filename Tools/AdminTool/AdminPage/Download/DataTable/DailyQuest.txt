@@ -1,0 +1,13 @@
+#	日常任务配置表																						
+#	Id		QuestName	QuestDesc	QuestType	TargetProgressCount	Param0	Param1	Param2	Param3	Param4	PrePlayerLevel	RewardPlayerExp	RewardItemId0	RewardItemCount0	RewardItemId1	RewardItemCount1	RewardItemId2	RewardItemCount2	RewardItemId3	RewardItemCount3	RewardItemId4	RewardItemCount4
+#	int		string	string	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int
+#	任务编号	策划备注	任务名称	任务描述	任务类型	任务目标值	参数0	参数1	参数2	参数3	参数4	前置玩家等级	奖励玩家经验	奖励道具编号1	奖励道具数量1	奖励道具编号2	奖励道具数量2	奖励道具编号3	奖励道具数量3	奖励道具编号4	奖励道具数量4	奖励道具编号5	奖励道具数量5
+	1	完成任意副本10次不扫荡	QUEST_NAME_1	QUEST_DESC_1	1	10	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	2	扫荡10次副本	QUEST_NAME_1	QUEST_DESC_2	2	10	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	3	完成离线竞技场3次	QUEST_NAME_1	QUEST_DESC_3	3	3	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	4	完成PVP3次	QUEST_NAME_1	QUEST_DESC_4	4	3	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	5	月卡每日奖励	QUEST_NAME_1	QUEST_DESC_5	5	1	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	6	翻翻棋活动对战胜利1次	QUEST_NAME_1	QUEST_DESC_6	6	1	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	7	千锤百炼完成1次	QUEST_NAME_1	QUEST_DESC_7	7	1	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	8	时空裂隙活动完成3次	QUEST_NAME_1	QUEST_DESC_8	8	3	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0
+	9	赠送好友体力5个	QUEST_NAME_1	QUEST_DESC_9	9	5	0	0	0	0	0	1	0	1	100	2	100	202101	5	-1	0	-1	0

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}{% endblock %}
+    {% block content %}
+    <p class="title">Edit Local Notification</p>
+    <a href="/localNotifications/manage" style="font-size:20px"><-Return</a><br><br>
+    <form method="post" >
+        <table border="2" style="color:#7a8f9f">
+            <tr>
+                <td>Name:</td>
+                {% if name %}
+                <td><input type="text" name="Name" readOnly="true" value="{{name}}"></td>
+                {% else %}
+                <td><input type="text" name="Name"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Time</td>
+                {% if time %}
+                <td><input type="text" name="Time" value="{{time}}"></td>
+                {% else %}
+                <td><input type="text" name="Time"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Message</td>
+                {% if message %}
+                <td><input type="text" name="Message" value="{{message}}"></td>
+                {% else %}
+                <td><input type="text" name="Message"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    {% if name %}
+                    <input type="hidden" name="action" value="edit">
+                    <input type = "submit" value="edit">
+                    {% else %}
+                    <input type="hidden" name="action" value="add">
+                    <input type = "submit" value="add">
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+    {% autoescape off %}
+    {{ info }}
+    {% endautoescape %}
+    {% endblock %}
+</body>
+</html>

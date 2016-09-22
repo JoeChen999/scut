@@ -1,0 +1,5 @@
+#	玩家对战其他玩家 AI 使用的副本配置表																
+#	Id		SceneId	TimerType	TimerDuration	TimerAlert	AIBehavior0	AIBehavior1	AIBehavior2	AIBehavior3	SpawnPointX	SpawnPointY	SpawnAngle	OppSpawnPointX	OppSpawnPointY	OppSpawnAngle	SceneRegionMaskId
+#	int		int	int	int	int	string	string	string	string	float	float	float	float	float	float	int
+#	副本编号	策划备注	场景编号	定时器类型	定时器时长	定时器报警时长	AI 行为 0	AI 行为 1	AI 行为 2	AI 行为 3	出生点X坐标	出生点Y坐标	出生朝向	对手出生点X坐标	对手出生点Y坐标	对手出生朝向	加载区域掩码
+	1	测试使用	39	1	300	30	Scenes/ChessBattleTest	Scenes/OppPlayer			-9.12	-3.13	0	9.14	3.08	180	0

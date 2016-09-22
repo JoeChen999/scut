@@ -1,0 +1,24 @@
+#	武器套装表																															
+#	Id		WeaponId0	AttachPointPath0	VisibleByDefault0	WeaponId1	AttachPointPath1	VisibleByDefault1	WeaponId2	AttachPointPath2	VisibleByDefault2	WeaponId3	AttachPointPath3	VisibleByDefault3	WeaponId4	AttachPointPath4	VisibleByDefault4	WeaponId5	AttachPointPath5	VisibleByDefault5	WeaponId6	AttachPointPath6	VisibleByDefault6	WeaponId7	AttachPointPath7	VisibleByDefault7	WeaponId8	AttachPointPath8	VisibleByDefault8	WeaponId9	AttachPointPath9	VisibleByDefault9
+#	int		int	string	bool	int	string	bool	int	string	bool	int	string	bool	int	string	bool	int	string	bool	int	string	bool	int	string	bool	int	string	bool	int	string	bool
+#	武器套装编号	策划备注	武器编号1	武器挂接点1	默认是否显示1	武器编号2	武器挂接点2	默认是否显示2	武器编号3	武器挂接点3	默认是否显示3	武器编号4	武器挂接点4	默认是否显示4	武器编号5	武器挂接点5	默认是否显示5	武器编号6	武器挂接点6	默认是否显示6	武器编号7	武器挂接点7	默认是否显示7	武器编号8	武器挂接点8	默认是否显示8	武器编号9	武器挂接点9	默认是否显示9	武器编号10	武器挂接点10	默认是否显示10
+	10101	亚瑟王	101	hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10201	荆轲	201	hand_left	TRUE	202	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10301	狮心王	301	hand_left	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10401	卡特琳娜	401	hand_left	TRUE	401	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10501	梅林	501	hand_left	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10601	凯撒	601	hand_left	TRUE	602	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10701	黑胡子	701	hand_left	TRUE	702	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10801	链球男	801	hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	10901	小萝莉	901	hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11001	血腥玛丽	1001	hand_left	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11101	贞德	1101	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11201	杰克	1201	hand_left	TRUE	1201	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11301	达芬奇	1301	hand_left	TRUE	1302	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11401	范海辛	1401	hand_left	TRUE	1402	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11501	埃及艳后	1501	hand_left	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11601	岳飞	1601	hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11701	佐罗	1701	hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11801	项羽	1801	hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	11901	噬毒者	1901	hand_left	TRUE	1902	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE
+	12001	虞姬	2001	hand_right	TRUE	-1	hand_right	TRUE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE	-1		FALSE

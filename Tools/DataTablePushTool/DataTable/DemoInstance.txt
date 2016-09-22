@@ -1,0 +1,5 @@
+#	展示副本配置表														
+#	Id		Name	Description	SceneId	AIBehavior0	AIBehavior1	AIBehavior2	AIBehavior3	InstanceNpcs	SpawnPointX	SpawnPointY	SpawnAngle	HeroMinHP	SceneRegionMaskId
+#	int		string	string	int	string	string	string	string	string	float	float	float	int	int
+#	副本编号	策划备注	副本名称	副本描述	场景编号	AI行为0	AI行为1	AI行为2	AI行为3	副本NPC	出生点X坐标	出生点Y坐标	出生朝向	英雄最低血量	加载区域掩码
+	1	测试副本	INSTANCE_NAME_1	INSTANCE_DESC_1	31	Scenes/TreeDemoInstance1				InstanceNpcs_TreeLevel1	27.16	-13.6	-90	100	0

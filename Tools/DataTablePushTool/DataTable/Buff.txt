@@ -1,0 +1,51 @@
+#	Buff 配置表																								
+#	Id		NameKey	DescKey	GoodOrBad	ExcludingGroup	ExcludingLevel	BuffType	Duration	HeartBeat	BuffParam0	BuffParam1	BuffParam2	BuffParam3	BuffParam4	BuffParam5	BuffParam6	BuffParam7	BuffParam8	BuffParam9	DefaultEffectId	BlendEffectId	TransferOnHeroSwitch	KeepOnFakeDeath	ColorChangeId
+#	int		string	string	int	int	int	int	float	float	float	float	float	float	float	float	float	float	float	float	int	int	bool	bool	int
+#	Buff 编号	策划备注	Buff 名称	Buff 描述	增益(1)/减益(-1)	互斥组 (0 为不互斥)	互斥等级	Buff 类型（6000:火焰标记，6001:冰冻标记，6002:减速标记）	持续时间	心跳间隔	Buff 参数 0	Buff 参数 1	Buff 参数 2	Buff 参数 3	Buff 参数 4	Buff 参数 5	Buff 参数 6	Buff 参数 7	Buff 参数 8	Buff 参数 9	默认特效编号	叠加特效编号	是否传递	假死时是否保留	变色编号
+	101	霸体示例	BUFF_NAME	BUFF_DESC	1	0	0	1	10	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	1	2	TRUE	FALSE	2
+	102	无敌示例	BUFF_NAME	BUFF_DESC	1	0	0	2	10	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	103	可换算成 Impact 的周期性 Buff 示例(0: Impact ID)	BUFF_NAME	BUFF_DESC	-1	0	0	3	30	5	1	-1	-1	-1	-1	1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	104	改变 MaxHP 示例	BUFF_NAME	BUFF_DESC	1	0	0	5001	30	0	1	1.3	1	-1	-1	1	1.3	1	-1	-1	-1	-1	TRUE	FALSE	-1
+	105	改变物理攻击示例	BUFF_NAME	BUFF_DESC	-1	1	0	5003	60	0	2	5000	-1	-1	-1	2	5000	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	106	改变物理防御示例	BUFF_NAME	BUFF_DESC	1	0	0	5004	5	0	2	9999999	-1	-1	-1	2	9999999	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	107	假死示例	BUFF_NAME	BUFF_DESC	0	4	0	4	3000	0	0.8	-1	-1	-1	-1	0.8	-1	-1	-1	-1	-1	-1	TRUE	TRUE	-1
+	108	骷髅盾牌兵假死	BUFF_NAME	BUFF_DESC	0	4	0	4	15	0	1	-1	-1	-1	-1	1	-1	-1	-1	-1	-1	-1	TRUE	TRUE	-1
+	109	显隐武器示例	BUFF_NAME	BUFF_DESC	0	0	0	5	5	0	0	-1	-1	-1	-1	1	-1	-1	-1	-1	-1	-1	TRUE	TRUE	-1
+	1000	切换英雄无敌时间	BUFF_NAME	BUFF_DESC	1	0	0	2	1.5	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10000	推图副本71级BOSS无敌BUFF	BUFF_NAME	BUFF_DESC	1	0	0	1	300	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10001	推图副本71级BOSS霸体BUFF	BUFF_NAME	BUFF_DESC	1	0	0	2	300	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10002	推图副本71级BOSS给自己加攻击BUFF	BUFF_NAME	BUFF_DESC	1	0	0	5003	300	0	1	0.5	-1	-1	-1	1	0.5	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10003	推图副本71级BOSS给自己减防御BUFF	BUFF_NAME	BUFF_DESC	-1	0	0	5004	300	0	1	0.5	-1	-1	-1	1	0.5	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10004	推图副本71级BOSS给敌人减攻击BUFF	BUFF_NAME	BUFF_DESC	-1	0	0	5003	30	0	1	0.05	-1	-1	-1	1	0.05	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10005	推图副本71级BOSS给敌人减防御BUFF	BUFF_NAME	BUFF_DESC	-1	0	0	5004	30	0	1	0.05	-1	-1	-1	1	0.05	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10006	测试技能扣血	BUFF_NAME	BUFF_DESC	-1	0	0	3	300	25	101	-1	-1	-1	-1	101	-1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10007	推图副本31级BOSS攻击力上升BUFF	BUFF_NAME	BUFF_DESC	-1	2	0	5003	15	0	1	1	-1	-1	-1	1	1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10008	推图副本31级BOSS防御上升BUFF	BUFF_NAME	BUFF_DESC	-1	2	0	5004	15	0	1	0.5	-1	-1	-1	1	0.5	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10009	BOSS出生5分钟霸体	BUFF_NAME	BUFF_DESC	1	0	0	1	300	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	TRUE	-1
+	10010	推图副本39级重甲步兵无限防御BUFF	BUFF_NAME	BUFF_DESC	-1	2	0	5004	5	0	1	100	-1	-1	-1	1	100	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10011	副本LV16boss出生无敌	BUFF_NAME	BUFF_DESC	1	0	0	2	301	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	-1
+	10012	推图副本3级BOSS无限防御BUFF	BUFF_NAME	BUFF_DESC	-1	2	0	5004	15	0	1	50	-1	-1	-1	1	50	-1	-1	-1	10012	-1	TRUE	FALSE	-1
+	10013	推图副本5级BOSS加攻击BUFF	BUFF_NAME	BUFF_DESC	-1	2	0	5003	15	0	1	5	-1	-1	-1	1	5	-1	-1	-1	10013	-1	TRUE	FALSE	-1
+	11110	霸体条专用霸体buff（不变色）	BUFF_NAME	BUFF_DESC	1	100	0	1	300	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	TRUE	-1
+	11111	霸体条专用霸体buff（变色）	BUFF_NAME	BUFF_DESC	1	100	0	1	300	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	TRUE	2
+	11112	霸体条专用高级霸体buff（不变色）	BUFF_NAME	BUFF_DESC	1	100	0	6	300	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	TRUE	-1
+	11113	霸体条专用霸体buff（变色）	BUFF_NAME	BUFF_DESC	1	100	0	6	300	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	TRUE	2
+	1000701	亚瑟王skill2乱舞剑无敌buff	BUFF_NAME	BUFF_DESC	1	0	0	2	4.8	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	6
+	1000801	亚瑟王skill3风火轮无敌buff	BUFF_NAME	BUFF_DESC	1	0	0	2	4.2	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	6
+	1000901	亚瑟王skill4切换技无敌buff	BUFF_NAME	BUFF_DESC	1	0	0	2	2.5	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	TRUE	FALSE	6
+	1030601	卡特琳娜五角星残留火焰伤害	BUFF_NAME	BUFF_DESC	-1	10306	1	3	8	1	1030711	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1030611	卡特琳娜五角星残留火焰标记	BUFF_NAME	BUFF_DESC	-1	6001	1	6000	8	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	1030611	-1	FALSE	FALSE	-1
+	1030701	卡特琳娜大狙残留火焰伤害	BUFF_NAME	BUFF_DESC	-1	10307	1	3	8	1	1030711	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1030711	卡特琳娜大狙残留火焰标记	BUFF_NAME	BUFF_DESC	-1	6000	1	6000	8	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	1030711	-1	FALSE	FALSE	-1
+	1048801	梅林闪避陷阱减速	BUFF_NAME	BUFF_DESC	-1	10488	0	5002	2	0	1	-0.3	-1	-1	-1	-1	-1	-1	-1	-1	101	-1	FALSE	FALSE	5
+	1110801	杰克恶魔形态自己掉血BuffLV1	BUFF_NAME	BUFF_DESC	-1	11108	0	3	3000	1	1110899	-1	-1	-1	-1	-1	-1	-1	-1	-1	1110801	-1	FALSE	FALSE	-1
+	1110811	杰克恶魔形态加攻击力BuffLV1（物理）	BUFF_NAME	BUFF_DESC	1	11118	0	5003	3000	0	1	0.3	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1110821	杰克恶魔形态加攻击力BuffLV1（法术）	BUFF_NAME	BUFF_DESC	1	11128	0	5005	3000	0	1	0.3	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1110899	结束杰克恶魔形态自己掉血Buff	BUFF_NAME	BUFF_DESC	-1	11108	1	1	0.2	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1110898	结束杰克恶魔形态加攻击力Buff（物理）	BUFF_NAME	BUFF_DESC	1	11118	1	1	0.2	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1110897	结束杰克恶魔形态加攻击力Buff（法术）	BUFF_NAME	BUFF_DESC	1	11128	1	1	0.2	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1170801	项羽鬼雄形态攻击力提升BuffLV1	BUFF_NAME	BUFF_DESC	-1	11708	0	5003	12	0	1	0.3	-1	-1	-1	-1	-1	-1	-1	-1	1170801	-1	FALSE	FALSE	-1
+	1140601	埃及艳后火药Buff	BUFF_NAME	BUFF_DESC	-1	11406	0	6000	8	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	1140601	-1	FALSE	FALSE	-1
+	1149999	埃及艳后抵消火药Buff	BUFF_NAME	BUFF_DESC	-1	11406	1	6099	0.1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1
+	1190601	喷毒者毒雾Buff	BUFF_NAME	BUFF_DESC	-1	11906	0	6001	8	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	1190601	-1	FALSE	FALSE	-1
+	1199999	喷毒者抵消毒雾Buff	BUFF_NAME	BUFF_DESC	-1	11906	1	6098	0.1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	FALSE	FALSE	-1

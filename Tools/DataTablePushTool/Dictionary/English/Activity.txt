@@ -1,0 +1,5 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	ACTIVITY_NAME_CHESS		Turnover Chess

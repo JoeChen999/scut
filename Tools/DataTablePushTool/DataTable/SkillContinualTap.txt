@@ -1,0 +1,5 @@
+#	技能连续点击配置表					
+#	Id		Duration	ContinualTapStartTime	ContinualTapDuration	IntervalCount
+#	int		float	float	float	int
+#	技能编号	策划备注	技能时长	连续点击开始时间	连续点击持续时间	点击区间数
+	1000701		3.8	0.5	3.3	10

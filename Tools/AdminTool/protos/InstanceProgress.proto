@@ -1,0 +1,5 @@
+message InstanceProgress
+{
+    required int32 UserId = 1;
+    required string Progress = 2;
+}

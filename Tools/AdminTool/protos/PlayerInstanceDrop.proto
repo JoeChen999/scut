@@ -1,0 +1,6 @@
+message PlayerInstanceDrop
+{
+    required int32 UserId = 1;
+    required int32 InstanceId = 2;
+    required string DropList = 3;
+}

@@ -1,0 +1,32 @@
+#	ÎäÆ÷Ä£ĞÍ±í				
+#	Id		ResourceName	ResourceNameForShow	ResourceNameForLobby
+#	int		string	string	string
+#	Ä£ĞÍ±àºÅ	²ß»®±¸×¢	×ÊÔ´Ãû³Æ	Õ¹Ê¾ÓÃ×ÊÔ´Ãû³Æ	Ö÷³ÌÓÃ×ÊÔ´Ãû³Æ
+	101	ÑÇÉªÍõÎäÆ÷1	Players/KingArthurWeapon	PlayersForShow/KingArthurWeapon	PlayersForLobby/KingArthurWeapon
+	201	¾£éğÎäÆ÷1×ó	Players/JingKeWeaponL	PlayersForShow/JingKeWeaponL	PlayersForLobby/JingKeWeaponL
+	202	¾£éğÎäÆ÷1ÓÒ	Players/JingKeWeaponR	PlayersForShow/JingKeWeaponR	PlayersForLobby/JingKeWeaponR
+	301	Ê¨ĞÄÍõÎäÆ÷1×ó	Players/LionheartWeaponL	PlayersForShow/LionheartWeaponL	PlayersForLobby/LionheartWeaponL
+	302	Ê¨ĞÄÍõÎäÆ÷1ÓÒ	Players/LionheartWeaponR	PlayersForShow/LionheartWeaponR	PlayersForLobby/LionheartWeaponR
+	401	¿¨ÌØÁÕÄÈÎäÆ÷1×ó	Players/KatarinaWeaponL	PlayersForShow/KatarinaWeaponL	PlayersForLobby/KatarinaWeaponL
+	402	¿¨ÌØÁÕÄÈÎäÆ÷1ÓÒ	Players/KatarinaWeaponR	PlayersForShow/KatarinaWeaponR	PlayersForLobby/KatarinaWeaponR
+	501	Ã·ÁÖÎäÆ÷1Ğ¡Çò	Players/MerlinWeapon	PlayersForShow/MerlinWeapon	PlayersForLobby/MerlinWeapon
+	601	¿­ÈöÎäÆ÷1×ó	Players/CaesarWeaponL	PlayersForShow/CaesarWeaponL	PlayersForLobby/CaesarWeaponL
+	602	¿­ÈöÎäÆ÷1ÓÒ	Players/CaesarWeaponR	PlayersForShow/CaesarWeaponR	PlayersForLobby/CaesarWeaponR
+	701	ºÚºú×ÓÎäÆ÷1×óÇ¹	Players/BlackbeardWeaponL	PlayersForShow/BlackbeardWeaponL	PlayersForLobby/BlackbeardWeaponL
+	702	ºÚºú×ÓÎäÆ÷1ÓÒµ¶	Players/BlackbeardWeaponL	PlayersForShow/BlackbeardWeaponL	PlayersForLobby/BlackbeardWeaponL
+	801	Á´ÇòÄĞÎäÆ÷1	Players/LianqiunanWeapon	PlayersForShow/LianqiunanWeapon	PlayersForLobby/LianqiunanWeapon
+	901	Ğ¡ÂÜÀòÎäÆ÷	Players/XiaoluoliWeapon	PlayersForShow/XiaoluoliWeapon	PlayersForLobby/XiaoluoliWeapon
+	1001	ÑªĞÈÂêÀöÎäÆ÷1	Players/KingArthurWeapon	PlayersForShow/KingArthurWeapon	PlayersForLobby/KingArthurWeapon
+	1101	ÕêµÂÎäÆ÷1	Players/JeannedarcWeapon	PlayersForShow/JeannedarcWeapon	PlayersForLobby/JeannedarcWeapon
+	1201	½Ü¿ËÎäÆ÷1	Players/JackWeapon	PlayersForShow/JackWeapon	PlayersForLobby/JackWeapon
+	1301	´ï·ÒÆæÎäÆ÷1×ó	Players/DaVinciWeaponL	PlayersForShow/DaVinciWeaponL	PlayersForLobby/DaVinciWeaponL
+	1302	´ï·ÒÆæÎäÆ÷1ÓÒ	Players/DaVinciWeaponR	PlayersForShow/DaVinciWeaponR	PlayersForLobby/DaVinciWeaponR
+	1401	·¶º£ĞÁÎäÆ÷1Ç¹	Players/VanHelsingWeaponL	PlayersForShow/VanHelsingWeaponL	PlayersForLobby/VanHelsingWeaponL
+	1402	·¶º£ĞÁÎäÆ÷1³İÂÖÈĞ	Players/VanHelsingWeaponR	PlayersForShow/VanHelsingWeaponR	PlayersForLobby/VanHelsingWeaponR
+	1501	°£¼°ÑŞºóÎäÆ÷1	Players/CleopatraWeapon	PlayersForShow/CleopatraWeapon	PlayersForLobby/CleopatraWeapon
+	1601	ÔÀ·ÉÎäÆ÷1	Players/YueFeiWeapon	PlayersForShow/YueFeiWeapon	PlayersForLobby/YueFeiWeapon
+	1701	×ôÂŞÎäÆ÷1	Players/RibenlangrenWeapon	PlayersForShow/RibenlangrenWeapon	PlayersForLobby/RibenlangrenWeapon
+	1801	ÏîÓğÎäÆ÷1	Players/XiangyuWeapon	PlayersForShow/XiangyuWeapon	PlayersForLobby/XiangyuWeapon
+	1901	ÊÉ¶¾ÕßÎäÆ÷ÅçÍ·	Players/PenduzheWeaponL	PlayersForShow/PenduzheWeaponL	PlayersForLobby/PenduzheWeaponL
+	1902	ÊÉ¶¾ÕßÎäÆ÷¶¾Æ¿	Players/PenduzheWeaponR	PlayersForShow/PenduzheWeaponR	PlayersForLobby/PenduzheWeaponR
+	2001	Óİ¼§ÎäÆ÷1	Players/KingArthurWeapon	PlayersForShow/KingArthurWeapon	PlayersForLobby/KingArthurWeapon

@@ -1,0 +1,7 @@
+message CLPacketHead
+{
+	required int32 MsgId = 1;
+	required int32 ActionId = 2;
+	required string SessionId = 3;
+	required int32 UserId = 4;
+}

@@ -1,0 +1,29 @@
+﻿#	字典配置表
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	ANNOUNCEMENT_RECEIVE_GEAR		{0}人气爆棚，在{1}后奇迹般的获得了{2}！！
+	ANNOUNCEMENT_RECEIVE_LEVEL		{0}历尽千辛万苦，终于达到了{1}级，真是可喜可贺！
+	ANNOUNCEMENT_RECEIVE_LVIP		{0}太酷了，一口气提升VIP到{1}级！
+	ANNOUNCEMENT_RECEIVE_HVIP		看这里看这里{0}一口气把VIP提升到了{1}级，活生生的土豪啊！！
+	ANNOUNCEMENT_RECEIVE_HERO		{0}在{1}之后，奇迹般的得到了{2}！
+	ANNOUNCEMENT_RECEIVE_SHERO		{0}通过在{1}中的不懈努力，终于获得了明媚以求的{2}，太帅了！！
+	ANNOUNCEMENT_RECEIVE_LPARAM		真是厉害，{0}居然把{1}的战斗力提升到了{2}，太给力了！！
+	ANNOUNCEMENT_RECEIVE_HPARAM		{0}太厉害了，居然把{1}的战斗力提升到了{2}，真是名不虚传啊！！
+	ANNOUNCEMENT_RECEIVE_LSTRENG		{0}太幸运了，把{1}强化到了{2}级！！
+	ANNOUNCEMENT_RECEIVE_HSTRENG		{0}幸运至极，一口气把{1}强化到了{2}级，真是太厉害了！！
+	ANNOUNCEMENT_RECEIVE_LELEVATION		{0}的{1}的飞升等级达到了{2}级，厉害！！
+	ANNOUNCEMENT_RECEIVE_HELEVATION		{0}经过坚持不懈的努力，使{1}的飞升等级达到了{2}级，真是天大的喜讯！！
+	ANNOUNCEMENT_RECEIVE_CONSCIOUSNESS		{0}经过努力，使{1}的战意提升到了{2}级，来膜拜大神吧！！
+	ANNOUNCEMENT_RECEIVE_GOLDTEN		{0}经过深思熟虑，按下了十连抽的按钮，各种宝物瞬间爆了出来！！
+	ANNOUNCEMENT_RECEIVE_DIAMONDTEN		{0}绝对是个有魄力的土豪，他毫不犹豫了按下了钻石十连抽的按钮，真个世界下起了宝物雨！！
+	ANNOUNCEMENT_RECEIVE_NOTICE		[AAC2CFFF]紧急公告:[-][FFB746FF]{0}[-]
+	ANNOUNCEMENT_ADVERTISEMENT		[AAC2CFFF]喜讯：[-][FFB746FF]{0}[-]
+	CHAT_MSG_SYSTEM_COINCHANCE		普通抽奖
+	CHAT_MSG_SYSTEM_MONEYCHANCE		精英抽奖
+	CHAT_MSG_SYSTEM_GEARFOUNDRY		千锤百炼
+	CHAT_MSG_SYSTEM_GEARCOMPOSE		装备合成
+	CHAT_MSG_SYSTEM_HEROPIECECOMPOSE		英雄合成
+	CHAT_MSG_SYSTEM_TURNOVERCHESS		翻翻棋
+	CHAT_MSG_SYSTEM_COMPLETEINSTANCE		副本通关
+	CHAT_MSG_SYSTEM_PVPTOKENEXCHANGE		竞技兑换

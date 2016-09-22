@@ -1,0 +1,18 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主鍵	策劃備註	字典內容，可使用轉義符
+	Equip_Name_1		白武器1
+	Equip_Name_2		白武器2
+	Equip_Name_3		鑌鐵長棍
+	Equip_Name_4		微風法球
+	Equip_Name_5		突擊之矛
+	Equip_Name_6		秘銀短錘
+	Equip_Name_7		藍刀1
+	Equip_Name_8		鎮魂鉤鐮
+	Equip_Name_9		赤月長矛
+	Equip_Name_10		藍法杖
+	Equip_Name_11		藍書籍
+	Equip_Name_12		騎士之錘
+	Equip_Name_13		烏金長棍
+	Equip_Name_14		水月明珠

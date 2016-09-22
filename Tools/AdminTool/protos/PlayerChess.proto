@@ -1,0 +1,17 @@
+message PlayerChess
+{
+    required int32 UserId = 1;
+    required int32 Count = 2;
+    required int32 Token = 3;
+    required int32 Anger = 4;
+    required string HP = 5;
+    required string ChessBoard = 6;
+    required int32 GotCoin = 7;
+    required int32 GotMoney = 8;
+    required int32 GotStarEnergy = 9;
+    required string GotGears = 10;
+    required string GotItems = 11;
+    required string LastResetTime = 12;
+    required string MyTeam = 13;
+    required int32 OpenCount = 14;
+}

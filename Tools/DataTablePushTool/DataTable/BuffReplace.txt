@@ -1,0 +1,5 @@
+#	Buff 替换配置表			
+#	Id		NeededCount	TargetBuffId
+#	int		int	int
+#	源 Buff 编号	策划备注	源 Buff 需求数量	替换 Buff 编号
+	1	示例	3	4

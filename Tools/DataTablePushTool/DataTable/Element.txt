@@ -1,0 +1,10 @@
+#	克制属性配置表											
+#	Id		RestrainedElementId1	RestrainingValue1	RestrainedElementId2	RestrainingValue2	RestrainedElementId3	RestrainingValue3	RestrainedElementId4	RestrainingValue4	RestrainedElementId5	RestrainingValue5
+#	int		int	float	int	float	int	float	int	float	int	float
+#	克制属性编号	策划备注	克制对象属性编号1	克制效果值1	克制对象属性编号2	克制效果值2	克制对象属性编号3	克制效果值3	克制对象属性编号4	克制效果值4	克制对象属性编号5	克制效果值5
+	0	无属性	-1	0	-1	0	-1	0	-1	0	-1	0
+	1	雷	2	-0.1	3	0.1	-1	0	-1	0	-1	0
+	2	冰	1	0.1	3	-0.1	-1	0	-1	0	-1	0
+	3	火	1	-0.1	2	0.1	-1	0	-1	0	-1	0
+	4	光	5	0.1	-1	0	-1	0	-1	0	-1	0
+	5	暗	4	0.1	-1	0	-1	0	-1	0	-1	0

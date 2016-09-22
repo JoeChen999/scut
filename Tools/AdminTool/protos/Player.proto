@@ -1,0 +1,18 @@
+message Player
+{
+    required int32 Id = 1;
+    required string Name = 2;
+    required int32 Coin = 3;
+    required int32 Money = 4;
+    required int32 Level = 5;
+    required int32 Exp = 6;
+    required string AccountName = 7;
+    required string status = 8;
+    required int32 PortraitType = 9;
+    required bool IsFemale= 10;
+    required int32 Energy = 11;
+    required int64 LastEnergyRecoverTime= 12;
+    required int32 VIPLevel = 13;
+    required int32 VIPExp = 14;
+    required int32 StarEnergy = 15;
+}

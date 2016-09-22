@@ -1,0 +1,33 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主鍵	策劃備註	字典內容，可使用轉義符
+	ITEM_NAME_1		低級經驗丹
+	ITEM_NAME_2		中級經驗丹
+	ITEM_NAME_3		高級經驗丹
+	ITEM_NAME_4		頂級經驗丹
+	ITEM_NAME_5		飛升丹
+	ITEM_NAME_6		藍色強化石
+	ITEM_NAME_7		紫色強化石
+	ITEM_NAME_8		橙色強化石
+	ITEM_NAME_9		亞瑟王靈魂石
+	ITEM_NAME_10		荊軻靈魂石
+	ITEM_NAME_11		獅心王靈魂石
+	ITEM_NAME_12		卡特琳娜靈魂石
+	ITEM_NAME_13		梅林靈魂石
+	ITEM_NAME_14		凱撒靈魂石
+	ITEM_NAME_15		黑鬍子靈魂石
+	ITEM_NAME_16		斯巴達克斯靈魂石
+	ITEM_NAME_17		花木蘭靈魂石
+	ITEM_NAME_18		血腥瑪麗靈魂石
+	ITEM_NAME_19		聖女貞德靈魂石
+	ITEM_NAME_20		開膛手傑克靈魂石
+	ITEM_NAME_21		達芬奇靈魂石
+	ITEM_NAME_22		范海辛靈魂石
+	ITEM_NAME_23		埃及豔後靈魂石
+	ITEM_NAME_24		岳飛靈魂石
+	ITEM_NAME_25		佐羅靈魂石
+	ITEM_NAME_26		霸王項羽靈魂石
+	ITEM_NAME_27		俠盜羅賓漢靈魂石
+	ITEM_NAME_28		虞姬靈魂石
+	ITEM_NAME_29		通用靈魂石

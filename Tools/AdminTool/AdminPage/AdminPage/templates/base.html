@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}默认标题{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+</head>
+<style type="text/css">
+    .divtitle {color:#7a8f9f;font-family:Arial;font-size:25px;font-weight:700}
+    .title {color:#7a8f9f;font-family:"琥珀";font-size:35px;font-weight:900}
+    .option {color:#5f9f9f;font-family:Arial;font-size:15px;font-weight:500}
+</style>
+<body style="height:100%;background-image:url(/static/bg-2.gif);background-size:100% 100%;background-repeat:no-repeat;background-position:center">
+    <table width="100%">
+        <tr>
+            <td valign="top" width="200" height="900">{% include 'bottom.html' %}{% include 'nav.html' %}</td>
+            <td valign="top" align="center" style="height:100%;background-image:url(/static/background.gif);background-size:90% 100%;background-repeat:no-repeat;background-position:center">
+                {% block content %}
+                <div>Hello</div>
+                {% endblock %}
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

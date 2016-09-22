@@ -1,0 +1,7 @@
+message LCPacketHead
+{
+	required int32 MsgId = 1;
+	required int32 ActionId = 2;
+	required int32 ErrorCode = 3;
+	required string ErrorInfo = 4;
+}

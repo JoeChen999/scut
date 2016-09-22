@@ -1,0 +1,3 @@
+[submodule "Scut"]
+	path = Scut
+	url = git@git.antinc.cn:3rdparty/scut.git

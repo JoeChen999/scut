@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C84C5448-E899-410C-ACD5-0D183ECB4FA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Genesis.GameServer.LobbyServer</RootNamespace>
+    <AssemblyName>LobbyServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="jpush-api">
+      <HintPath>.\jpush-api.dll</HintPath>
+    </Reference>
+    <Reference Include="KopiLua, Version=1.3.5289.19231, Culture=neutral, PublicKeyToken=e25f4af1e4f7b31c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\KopiLua.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.9.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.9.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=3.2.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLua, Version=1.3.0.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\NLua.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.9.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=3.9.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=3.9.53.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\RoomServer\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Script\CsScript\Action\Action100.cs" />
+    <Compile Include="Script\CsScript\Action\Action1001.cs" />
+    <Compile Include="Script\CsScript\Action\Action1000.cs" />
+    <Compile Include="Script\CsScript\Action\Action1002.cs" />
+    <Compile Include="Script\CsScript\Action\Action1003.cs" />
+    <Compile Include="Script\CsScript\Action\Action1004.cs" />
+    <Compile Include="Script\CsScript\Action\Action1005.cs" />
+    <Compile Include="Script\CsScript\Action\Action1006.cs" />
+    <Compile Include="Script\CsScript\Action\Action1007.cs" />
+    <Compile Include="Script\CsScript\Action\Action1008.cs" />
+    <Compile Include="Script\CsScript\Action\Action1009.cs" />
+    <Compile Include="Script\CsScript\Action\Action101.cs" />
+    <Compile Include="Script\CsScript\Action\Action1010.cs" />
+    <Compile Include="Script\CsScript\Action\Action1011.cs" />
+    <Compile Include="Script\CsScript\Action\Action1012.cs" />
+    <Compile Include="Script\CsScript\Action\Action1013.cs" />
+    <Compile Include="Script\CsScript\Action\Action1014.cs" />
+    <Compile Include="Script\CsScript\Action\Action1015.cs" />
+    <Compile Include="Script\CsScript\Action\Action1016.cs" />
+    <Compile Include="Script\CsScript\Action\Action1017.cs" />
+    <Compile Include="Script\CsScript\Action\Action1018.cs" />
+    <Compile Include="Script\CsScript\Action\Action1019.cs" />
+    <Compile Include="Script\CsScript\Action\Action102.cs" />
+    <Compile Include="Script\CsScript\Action\Action1020.cs" />
+    <Compile Include="Script\CsScript\Action\Action1021.cs" />
+    <Compile Include="Script\CsScript\Action\Action1022.cs" />
+    <Compile Include="Script\CsScript\Action\Action1023.cs" />
+    <Compile Include="Script\CsScript\Action\Action1024.cs" />
+    <Compile Include="Script\CsScript\Action\Action1025.cs" />
+    <Compile Include="Script\CsScript\Action\Action1026.cs" />
+    <Compile Include="Script\CsScript\Action\Action1028.cs" />
+    <Compile Include="Script\CsScript\Action\Action1029.cs" />
+    <Compile Include="Script\CsScript\Action\Action1030.cs" />
+    <Compile Include="Script\CsScript\Action\Action1031.cs" />
+    <Compile Include="Script\CsScript\Action\Action1032.cs" />
+    <Compile Include="Script\CsScript\Action\Action1033.cs" />
+    <Compile Include="Script\CsScript\Action\Action1034.cs" />
+    <Compile Include="Script\CsScript\Action\Action1035.cs" />
+    <Compile Include="Script\CsScript\Action\Action1036.cs" />
+    <Compile Include="Script\CsScript\Action\Action1037.cs" />
+    <Compile Include="Script\CsScript\Action\Action1038.cs" />
+    <Compile Include="Script\CsScript\Action\Action1039.cs" />
+    <Compile Include="Script\CsScript\Action\Action1040.cs" />
+    <Compile Include="Script\CsScript\Action\Action1041.cs" />
+    <Compile Include="Script\CsScript\Action\Action1042.cs" />
+    <Compile Include="Script\CsScript\Action\Action1043.cs" />
+    <Compile Include="Script\CsScript\Action\Action1044.cs" />
+    <Compile Include="Script\CsScript\Action\Action1100.cs" />
+    <Compile Include="Script\CsScript\Action\Action1101.cs" />
+    <Compile Include="Script\CsScript\Action\Action1102.cs" />
+    <Compile Include="Script\CsScript\Action\Action1103.cs" />
+    <Compile Include="Script\CsScript\Action\Action1104.cs" />
+    <Compile Include="Script\CsScript\Action\Action1105.cs" />
+    <Compile Include="Script\CsScript\Action\Action1200.cs" />
+    <Compile Include="Script\CsScript\Action\Action1300.cs" />
+    <Compile Include="Script\CsScript\Action\Action1301.cs" />
+    <Compile Include="Script\CsScript\Action\Action1302.cs" />
+    <Compile Include="Script\CsScript\Action\Action1303.cs" />
+    <Compile Include="Script\CsScript\Action\Action1304.cs" />
+    <Compile Include="Script\CsScript\Action\Action2001.cs" />
+    <Compile Include="Script\CsScript\Action\Action2002.cs" />
+    <Compile Include="Script\CsScript\Action\Action2003.cs" />
+    <Compile Include="Script\CsScript\Action\Action2004.cs" />
+    <Compile Include="Script\CsScript\Action\Action2005.cs" />
+    <Compile Include="Script\CsScript\Action\Action2009.cs" />
+    <Compile Include="Script\CsScript\Action\Action2100.cs" />
+    <Compile Include="Script\CsScript\Action\Action2101.cs" />
+    <Compile Include="Script\CsScript\Action\Action2102.cs" />
+    <Compile Include="Script\CsScript\Action\Action2103.cs" />
+    <Compile Include="Script\CsScript\Action\Action2104.cs" />
+    <Compile Include="Script\CsScript\Action\Action2106.cs" />
+    <Compile Include="Script\CsScript\Action\Action2107.cs" />
+    <Compile Include="Script\CsScript\Action\Action2108.cs" />
+    <Compile Include="Script\CsScript\Action\Action2110.cs" />
+    <Compile Include="Script\CsScript\Action\Action2200.cs" />
+    <Compile Include="Script\CsScript\Action\Action2201.cs" />
+    <Compile Include="Script\CsScript\Action\Action2202.cs" />
+    <Compile Include="Script\CsScript\Action\Action2203.cs" />
+    <Compile Include="Script\CsScript\Action\Action2300.cs" />
+    <Compile Include="Script\CsScript\Action\Action2301.cs" />
+    <Compile Include="Script\CsScript\Action\Action2302.cs" />
+    <Compile Include="Script\CsScript\Action\Action2303.cs" />
+    <Compile Include="Script\CsScript\Action\Action2304.cs" />
+    <Compile Include="Script\CsScript\Action\Action2305.cs" />
+    <Compile Include="Script\CsScript\Action\Action2306.cs" />
+    <Compile Include="Script\CsScript\Action\Action2307.cs" />
+    <Compile Include="Script\CsScript\Action\Action2400.cs" />
+    <Compile Include="Script\CsScript\Action\Action2401.cs" />
+    <Compile Include="Script\CsScript\Action\Action2402.cs" />
+    <Compile Include="Script\CsScript\Action\Action2500.cs" />
+    <Compile Include="Script\CsScript\Action\Action3001.cs" />
+    <Compile Include="Script\CsScript\Action\Action3003.cs" />
+    <Compile Include="Script\CsScript\Action\Action3100.cs" />
+    <Compile Include="Script\CsScript\Action\Action3101.cs" />
+    <Compile Include="Script\CsScript\Action\Action3102.cs" />
+    <Compile Include="Script\CsScript\Action\Action3103.cs" />
+    <Compile Include="Script\CsScript\Action\Action3104.cs" />
+    <Compile Include="Script\CsScript\Action\Action3105.cs" />
+    <Compile Include="Script\CsScript\Action\Action3106.cs" />
+    <Compile Include="Script\CsScript\Action\Action3108.cs" />
+    <Compile Include="Script\CsScript\Action\Action3109.cs" />
+    <Compile Include="Script\CsScript\Action\Action3110.cs" />
+    <Compile Include="Script\CsScript\Action\Action3200.cs" />
+    <Compile Include="Script\CsScript\Action\Action3201.cs" />
+    <Compile Include="Script\CsScript\Action\Action9001.cs" />
+    <Compile Include="Script\CsScript\BILogs\PaymentBILog.cs" />
+    <Compile Include="Script\CsScript\Common\BILogger.cs" />
+    <Compile Include="Script\CsScript\Common\Broadcaster.cs" />
+    <Compile Include="Script\CsScript\Common\WorldServerSender.cs" />
+    <Compile Include="Script\CsScript\Cronjobs\InitPvpSeasonCron.cs" />
+    <Compile Include="Script\CsScript\Cronjobs\PushSystemAnnouncementCron.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.CostedMoney.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.CostedCoin.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.OpenedMoneyChanceCount.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.InstanceCompletedCount.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.PvpWinCount.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.FriendCount.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.GearStrengthenLevel.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.GearLevel.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.GearQuality.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.HeroConsicousnessLevel.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.HeroElevationLevel.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.HeroMight.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.HeroStarLevel.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.HeroCount.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.HeroLevel.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.PlayerLevel.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AnnouncementLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\DailyQuestLogic\PlayerDailyQuestLogic.Updaters.cs" />
+    <Compile Include="Script\CsScript\LogicModule\DailyQuestLogic\PlayerDailyQuestLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\AchievementLogic\PlayerAchievementLogic.cs" />
+    <Compile Include="Script\CsScript\OperationActivityProcessors\BaseOpActivityProcessor.cs" />
+    <Compile Include="Script\CsScript\OperationActivityProcessors\SevenDayCheckInProcessor.cs" />
+    <Compile Include="Script\CsScript\Rankings\PlayerMightRanking.cs" />
+    <Compile Include="Script\CsScript\Remote\RLPvpResultHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\WLMatchSuccessHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\WLPvpResultHandler.cs" />
+    <Compile Include="Script\Model\Contract\CLClaimAchievementReward.cs" />
+    <Compile Include="Script\Model\Contract\CLClaimDailyQuestReward.cs" />
+    <Compile Include="Script\Model\Contract\CLGetSinglePvpInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\CLGetWorldSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\CLOperationActivity.cs" />
+    <Compile Include="Script\Model\Contract\CLRefreshDailyQuest.cs" />
+    <Compile Include="Script\Model\Contract\LCClaimAchievementReward.cs" />
+    <Compile Include="Script\Model\Contract\LCClaimDailyQuestReward.cs" />
+    <Compile Include="Script\Model\Contract\LCGetSinglePvpInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\LCGetWorldSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\LCOperationActivity.cs" />
+    <Compile Include="Script\Model\Contract\LCPushAchievementProgress.cs" />
+    <Compile Include="Script\Model\Contract\LCPushDailyQuestProgress.cs" />
+    <Compile Include="Script\Model\Contract\LCPushSystemAnnouncement.cs" />
+    <Compile Include="Script\Model\Contract\LCRefreshDailyQuest.cs" />
+    <Compile Include="Script\Model\Contract\LWCancelSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\LWGetWorldSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\LWPvpResult.cs" />
+    <Compile Include="Script\Model\Contract\LWStartSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\PBAchievementInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBConvertUtility.cs" />
+    <Compile Include="Script\CsScript\Remote\RLGetGameConfigsHandler.cs" />
+    <Compile Include="Script\Model\CacheSet.cs" />
+    <Compile Include="Script\CsScript\Common\ChatProvider.cs" />
+    <Compile Include="Script\CsScript\Common\CustomActionDispatcher.cs" />
+    <Compile Include="Script\CsScript\Common\DBProvider.cs" />
+    <Compile Include="Script\CsScript\Common\GameConfigs.cs" />
+    <Compile Include="Script\CsScript\Common\JPushNotification.cs" />
+    <Compile Include="Script\CsScript\Common\LobbyServerUtils.cs" />
+    <Compile Include="Script\CsScript\Common\RoomServerSender.cs" />
+    <Compile Include="Script\CsScript\Common\Transaction.cs" />
+    <Compile Include="Script\CsScript\Cronjobs\Cronjobs.cs" />
+    <Compile Include="Script\CsScript\Cronjobs\ResetArenaChallengeCountCron.cs" />
+    <Compile Include="Script\CsScript\Cronjobs\ResetFoundryRoomCron.cs" />
+    <Compile Include="Script\CsScript\LogicModule\ArenaRankLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\GearLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\InstanceProgressLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\NearbyPlayerLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PaymentVerifyLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerArenaLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerChanceLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerChessLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerCosmosCrackLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerEpigraphLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerFoundryLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerFriendsLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerInstanceLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerHeroLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\HeroTeamLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerMailLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerMeridianLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerPackageLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerDefaultShopLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerSinglePvpLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerStoryInstanceLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PlayerVipShopLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PVPLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\RandomDropLogic.cs" />
+    <Compile Include="Script\CsScript\Rankings\SinglePvpRanking.cs" />
+    <Compile Include="Script\CsScript\LogicModule\SoulLogic.cs" />
+    <Compile Include="Script\CsScript\LogicModule\UseItemLogic.cs" />
+    <Compile Include="Script\CsScript\Remote\RLRegisterRoomServerHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\RLUpdateServerStateHandler.cs" />
+    <Compile Include="Script\Model\Contract\CLBagInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLBombChessBoard.cs" />
+    <Compile Include="Script\Model\Contract\CLChangeEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\CLChangeGear.cs" />
+    <Compile Include="Script\Model\Contract\CLChangeHeroTeam.cs" />
+    <Compile Include="Script\Model\Contract\CLChangeHeroTeamChess.cs" />
+    <Compile Include="Script\Model\Contract\CLChangePortrait.cs" />
+    <Compile Include="Script\Model\Contract\CLChangeSoul.cs" />
+    <Compile Include="Script\Model\Contract\CLCheckDisplayName.cs" />
+    <Compile Include="Script\Model\Contract\CLCleanOutInstance.cs" />
+    <Compile Include="Script\Model\Contract\CLCompleteStoryInstance.cs" />
+    <Compile Include="Script\Model\Contract\CLComposeHero.cs" />
+    <Compile Include="Script\Model\Contract\CLCreateGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\CLCreatePlayer.cs" />
+    <Compile Include="Script\Model\Contract\CLDeleteFriend.cs" />
+    <Compile Include="Script\Model\Contract\CLEndArenaBattle.cs" />
+    <Compile Include="Script\Model\Contract\CLEnterChessBattle.cs" />
+    <Compile Include="Script\Model\Contract\CLEnterCosmosCrackInstance.cs" />
+    <Compile Include="Script\Model\Contract\CLEnterInstance.cs" />
+    <Compile Include="Script\Model\Contract\CLGearCompose.cs" />
+    <Compile Include="Script\Model\Contract\CLGearLevelUp.cs" />
+    <Compile Include="Script\Model\Contract\CLGearStrengthen.cs" />
+    <Compile Include="Script\Model\Contract\CLGetActivitiesInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetArenaBattleReport.cs" />
+    <Compile Include="Script\Model\Contract\CLGetArenaEnemyInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetArenaInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetArenaLivenessReward.cs" />
+    <Compile Include="Script\Model\Contract\CLGetArenaRankList.cs" />
+    <Compile Include="Script\Model\Contract\CLGetChanceInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetChessBoard.cs" />
+    <Compile Include="Script\Model\Contract\CLGetChessEnemyInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetCommonShopInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetCosmosCrackInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetEmailList.cs" />
+    <Compile Include="Script\Model\Contract\CLGetEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\CLGetFoundryReward.cs" />
+    <Compile Include="Script\Model\Contract\CLGetFriendList.cs" />
+    <Compile Include="Script\Model\Contract\CLGetGameConfigs.cs" />
+    <Compile Include="Script\Model\Contract\CLGetGearFoundryData.cs" />
+    <Compile Include="Script\Model\Contract\CLGetHeroesInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGetLocalNotifications.cs" />
+    <Compile Include="Script\Model\Contract\CLGetMeridian.cs" />
+    <Compile Include="Script\Model\Contract\CLGetNearbyPlayers.cs" />
+    <Compile Include="Script\Model\Contract\CLGetNewHeroByPieces.cs" />
+    <Compile Include="Script\Model\Contract\CLGetPendingFriendRequests.cs" />
+    <Compile Include="Script\Model\Contract\CLGetPlayerDetails.cs" />
+    <Compile Include="Script\Model\Contract\CLGetPlayerEnergy.cs" />
+    <Compile Include="Script\Model\Contract\CLGetRecommendedPlayers.cs" />
+    <Compile Include="Script\Model\Contract\CLGetStoryInstanceData.cs" />
+    <Compile Include="Script\Model\Contract\CLGetVipShopInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLGiveEnergyToFriend.cs" />
+    <Compile Include="Script\Model\Contract\CLGMCommand.cs" />
+    <Compile Include="Script\Model\Contract\CLHeartBeat.cs" />
+    <Compile Include="Script\Model\Contract\CLHeroConsciousnessUp.cs" />
+    <Compile Include="Script\Model\Contract\CLHeroElevationLevelUp.cs" />
+    <Compile Include="Script\Model\Contract\CLHeroStarLevelUp.cs" />
+    <Compile Include="Script\Model\Contract\CLInstanceProgress.cs" />
+    <Compile Include="Script\Model\Contract\CLInviteFriendForGearFoundry.cs" />
+    <Compile Include="Script\Model\Contract\CLKickPlayerFromGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\CLLeaveCosmosCrackInstance.cs" />
+    <Compile Include="Script\Model\Contract\CLLeaveGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\CLLeaveInstance.cs" />
+    <Compile Include="Script\Model\Contract\CLLoginServer.cs" />
+    <Compile Include="Script\Model\Contract\CLManuallyRefreshCommonShop.cs" />
+    <Compile Include="Script\Model\Contract\CLManuallyRefreshVipShop.cs" />
+    <Compile Include="Script\Model\Contract\CLMatchGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\CLOpenAllChances.cs" />
+    <Compile Include="Script\Model\Contract\CLOpenChance.cs" />
+    <Compile Include="Script\Model\Contract\CLOpenChessField.cs" />
+    <Compile Include="Script\Model\Contract\CLOpenEmail.cs" />
+    <Compile Include="Script\Model\Contract\CLOpenInInstanceChest.cs" />
+    <Compile Include="Script\Model\Contract\CLOpenMeridianStar.cs" />
+    <Compile Include="Script\Model\Contract\CLPerformFoundry.cs" />
+    <Compile Include="Script\Model\Contract\CLPlayerMove.cs" />
+    <Compile Include="Script\Model\Contract\CLPurchaseInCommonShop.cs" />
+    <Compile Include="Script\Model\Contract\CLPurchaseInVipShop.cs" />
+    <Compile Include="Script\Model\Contract\CLReceiveEnergyFromFriend.cs" />
+    <Compile Include="Script\Model\Contract\CLRefreshArenaEnemies.cs" />
+    <Compile Include="Script\Model\Contract\CLRefreshChanceInfo.cs" />
+    <Compile Include="Script\Model\Contract\CLRespondToFriendRequest.cs" />
+    <Compile Include="Script\Model\Contract\CLRespondToGearFoundryInvitation.cs" />
+    <Compile Include="Script\Model\Contract\CLSearchPlayers.cs" />
+    <Compile Include="Script\Model\Contract\CLSelectNearbyPlayers.cs" />
+    <Compile Include="Script\Model\Contract\CLSellGoods.cs" />
+    <Compile Include="Script\Model\Contract\CLSendChat.cs" />
+    <Compile Include="Script\Model\Contract\CLSendFriendRequest.cs" />
+    <Compile Include="Script\Model\Contract\CLServerCommand.cs" />
+    <Compile Include="Script\Model\Contract\CLSignIn.cs" />
+    <Compile Include="Script\Model\Contract\CLSkillUseExpItem.cs" />
+    <Compile Include="Script\Model\Contract\CLStartArenaBattle.cs" />
+    <Compile Include="Script\Model\Contract\CLStartSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\CLStopSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\CLUnlockEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\CLUpgradeEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\CLUpgradeSkill.cs" />
+    <Compile Include="Script\Model\Contract\CLUpgradeSoul.cs" />
+    <Compile Include="Script\Model\Contract\CLUseItem.cs" />
+    <Compile Include="Script\Model\Contract\LCBagInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCBombChessBoard.cs" />
+    <Compile Include="Script\Model\Contract\LCChangeEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\LCChangeGear.cs" />
+    <Compile Include="Script\Model\Contract\LCChangeHeroTeam.cs" />
+    <Compile Include="Script\Model\Contract\LCChangeHeroTeamChess.cs" />
+    <Compile Include="Script\Model\Contract\LCChangePortrait.cs" />
+    <Compile Include="Script\Model\Contract\LCChangeSoul.cs" />
+    <Compile Include="Script\Model\Contract\LCCheckDisplayName.cs" />
+    <Compile Include="Script\Model\Contract\LCCleanOutInstance.cs" />
+    <Compile Include="Script\Model\Contract\LCCompleteStoryInstance.cs" />
+    <Compile Include="Script\Model\Contract\LCComposeHero.cs" />
+    <Compile Include="Script\Model\Contract\LCCreateGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\LCCreatePlayer.cs" />
+    <Compile Include="Script\Model\Contract\LCDeleteFriend.cs" />
+    <Compile Include="Script\Model\Contract\LCEndArenaBattle.cs" />
+    <Compile Include="Script\Model\Contract\LCEnterChessBattle.cs" />
+    <Compile Include="Script\Model\Contract\LCEnterCosmosCrackInstance.cs" />
+    <Compile Include="Script\Model\Contract\LCEnterInstance.cs" />
+    <Compile Include="Script\Model\Contract\LCGearCompose.cs" />
+    <Compile Include="Script\Model\Contract\LCGearLevelUp.cs" />
+    <Compile Include="Script\Model\Contract\LCGearStrengthen.cs" />
+    <Compile Include="Script\Model\Contract\LCGetActivitiesInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetArenaBattleReport.cs" />
+    <Compile Include="Script\Model\Contract\LCGetArenaEnemyInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetArenaInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetArenaLivenessReward.cs" />
+    <Compile Include="Script\Model\Contract\LCGetArenaRankList.cs" />
+    <Compile Include="Script\Model\Contract\LCGetChanceInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetChat.cs" />
+    <Compile Include="Script\Model\Contract\LCGetChessBoard.cs" />
+    <Compile Include="Script\Model\Contract\LCGetChessEnemyInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetCommonShopInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetCosmosCrackInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetEmailList.cs" />
+    <Compile Include="Script\Model\Contract\LCGetEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\LCGetFoundryReward.cs" />
+    <Compile Include="Script\Model\Contract\LCGetFriendList.cs" />
+    <Compile Include="Script\Model\Contract\LCGetGameConfigs.cs" />
+    <Compile Include="Script\Model\Contract\LCGetGearFoundryData.cs" />
+    <Compile Include="Script\Model\Contract\LCGetHeroesInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGetLocalNotifications.cs" />
+    <Compile Include="Script\Model\Contract\LCGetMeridian.cs" />
+    <Compile Include="Script\Model\Contract\LCGetNearbyPlayers.cs" />
+    <Compile Include="Script\Model\Contract\LCGetNewHeroByPieces.cs" />
+    <Compile Include="Script\Model\Contract\LCGetPendingFriendRequests.cs" />
+    <Compile Include="Script\Model\Contract\LCGetPlayerDetails.cs" />
+    <Compile Include="Script\Model\Contract\LCGetPlayerEnergy.cs" />
+    <Compile Include="Script\Model\Contract\LCGetRecommendedPlayers.cs" />
+    <Compile Include="Script\Model\Contract\LCGetStoryInstanceData.cs" />
+    <Compile Include="Script\Model\Contract\LCGetVipShopInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCGiveEnergyToFriend.cs" />
+    <Compile Include="Script\Model\Contract\LCGivenEnergyByFriend.cs" />
+    <Compile Include="Script\Model\Contract\LCGMCommand.cs" />
+    <Compile Include="Script\Model\Contract\LCHaveNewEmail.cs" />
+    <Compile Include="Script\Model\Contract\LCHeartBeat.cs" />
+    <Compile Include="Script\Model\Contract\LCHeroConsciousnessUp.cs" />
+    <Compile Include="Script\Model\Contract\LCHeroElevationLevelUp.cs" />
+    <Compile Include="Script\Model\Contract\LCHeroStarLevelUp.cs" />
+    <Compile Include="Script\Model\Contract\LCInstanceProgress.cs" />
+    <Compile Include="Script\Model\Contract\LCInvitedForGearFoundry.cs" />
+    <Compile Include="Script\Model\Contract\LCInviteFriendForGearFoundry.cs" />
+    <Compile Include="Script\Model\Contract\LCKickedFromGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\LCKickPlayerFromGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\LCLeaveCosmosCrackInstance.cs" />
+    <Compile Include="Script\Model\Contract\LCLeaveGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\LCLeaveInstance.cs" />
+    <Compile Include="Script\Model\Contract\LCLoginServer.cs" />
+    <Compile Include="Script\CsScript\Locale\SimplifiedLanguage.cs" />
+    <Compile Include="Script\Model\Contract\LCManuallyRefreshCommonShop.cs" />
+    <Compile Include="Script\Model\Contract\LCManuallyRefreshVipShop.cs" />
+    <Compile Include="Script\Model\Contract\LCMatchGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\LCOpenAllChances.cs" />
+    <Compile Include="Script\Model\Contract\LCOpenChance.cs" />
+    <Compile Include="Script\Model\Contract\LCOpenChessField.cs" />
+    <Compile Include="Script\Model\Contract\LCOpenEmail.cs" />
+    <Compile Include="Script\Model\Contract\LCOpenInInstanceChest.cs" />
+    <Compile Include="Script\Model\Contract\LCOpenMeridianStar.cs" />
+    <Compile Include="Script\Model\Contract\LCPerformFoundry.cs" />
+    <Compile Include="Script\Model\Contract\LCPlayerListInGearFoundryTeam.cs" />
+    <Compile Include="Script\Model\Contract\LCPlayerMove.cs" />
+    <Compile Include="Script\Model\Contract\LCPurchaseInCommonShop.cs" />
+    <Compile Include="Script\Model\Contract\LCPurchaseInVipShop.cs" />
+    <Compile Include="Script\Model\Contract\LCPushPvpMatchSuccess.cs" />
+    <Compile Include="Script\Model\Contract\LCReceiveEnergyFromFriend.cs" />
+    <Compile Include="Script\Model\Contract\LCReceiveFriendRequest.cs" />
+    <Compile Include="Script\Model\Contract\LCReceiveRespondToFriendRequest.cs" />
+    <Compile Include="Script\Model\Contract\LCRefreshArenaEnemies.cs" />
+    <Compile Include="Script\Model\Contract\LCRefreshChanceInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCResetGearFoundryInfo.cs" />
+    <Compile Include="Script\Model\Contract\LCResetStoryInstanceTimes.cs" />
+    <Compile Include="Script\Model\Contract\LCRespondToFriendRequest.cs" />
+    <Compile Include="Script\Model\Contract\LCRespondToGearFoundryInvitation.cs" />
+    <Compile Include="Script\Model\Contract\LCSearchPlayers.cs" />
+    <Compile Include="Script\Model\Contract\LCSelectNearbyPlayers.cs" />
+    <Compile Include="Script\Model\Contract\LCSellGoods.cs" />
+    <Compile Include="Script\Model\Contract\LCSendChat.cs" />
+    <Compile Include="Script\Model\Contract\LCSendFriendRequest.cs" />
+    <Compile Include="Script\Model\Contract\LCServerCommand.cs" />
+    <Compile Include="Script\Model\Contract\LCSignIn.cs" />
+    <Compile Include="Script\Model\Contract\LCSkillUseExpItem.cs" />
+    <Compile Include="Script\Model\Contract\LCStartArenaBattle.cs" />
+    <Compile Include="Script\Model\Contract\LCStartSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\LCStopSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\LCUnlockEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\LCUpgradeEpigraph.cs" />
+    <Compile Include="Script\Model\Contract\LCUpgradeSkill.cs" />
+    <Compile Include="Script\Model\Contract\LCUpgradeSoul.cs" />
+    <Compile Include="Script\Model\Contract\LCUseItem.cs" />
+    <Compile Include="Script\Model\Contract\LRCreateNewRoom.cs" />
+    <Compile Include="Script\Model\Contract\LRGetGameConfigs.cs" />
+    <Compile Include="Script\Model\Contract\PBActivityInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBArenaBattleReport.cs" />
+    <Compile Include="Script\Model\Contract\PBArenaPlayerAndTeamInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBBlownAwayImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBChessField.cs" />
+    <Compile Include="Script\Model\Contract\PBCosmosCrackInstanceInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBDailyQuestInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBDropInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBEmailInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBEpigraphInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBFloatImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBFreezeImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBGearFoundryInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBGearFoundryPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBGearFoundryProgressInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBGearInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBHardHitImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBHeroTeamInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBHPDamageImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBHPRecoverImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBInstance.cs" />
+    <Compile Include="Script\Model\Contract\PBInstanceDrop.cs" />
+    <Compile Include="Script\Model\Contract\PBInt64.cs" />
+    <Compile Include="Script\Model\Contract\PBItemInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBKeyValuePair.cs" />
+    <Compile Include="Script\Model\Contract\PBLobbyHeroInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBLobbyHeroStatus.cs" />
+    <Compile Include="Script\Model\Contract\PBMatchingPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBMeridianInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBReceivedItems.cs" />
+    <Compile Include="Script\Model\Contract\PBRoomHeroInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBRoomInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBRoomPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBShopItem.cs" />
+    <Compile Include="Script\Model\Contract\PBSkillImpactInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBSoulInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBSoundAndEffectImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBSteadyDamageImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBStiffnessImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBStunImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBTrackingAchievement.cs" />
+    <Compile Include="Script\Model\Contract\PBTrackingDailyQuest.cs" />
+    <Compile Include="Script\Model\Contract\PBTransformInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBVector2.cs" />
+    <Compile Include="Script\Model\Contract\PBVector3.cs" />
+    <Compile Include="Script\Model\Contract\RLCreateNewRoom.cs" />
+    <Compile Include="Script\Model\Contract\RLPvpResult.cs" />
+    <Compile Include="Script\Model\Contract\WLCancelSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\WLGetWorldSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\WLMatchSuccess.cs" />
+    <Compile Include="Script\Model\Contract\WLPvpResult.cs" />
+    <Compile Include="Script\Model\Contract\WLStartSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\DataTable\DTAchievement.cs" />
+    <Compile Include="Script\Model\DataTable\DTActivity.cs" />
+    <Compile Include="Script\Model\DataTable\DTAnnouncement.cs" />
+    <Compile Include="Script\Model\DataTable\DTChance.cs" />
+    <Compile Include="Script\Model\DataTable\DTChanceCost.cs" />
+    <Compile Include="Script\Model\DataTable\DTDailyLogin.cs" />
+    <Compile Include="Script\Model\DataTable\DTDailyQuest.cs" />
+    <Compile Include="Script\Model\DataTable\DTDrop.cs" />
+    <Compile Include="Script\Model\DataTable\DTEpigraph.cs" />
+    <Compile Include="Script\Model\DataTable\DTGear.cs" />
+    <Compile Include="Script\Model\DataTable\DTGearLevelUp.cs" />
+    <Compile Include="Script\Model\DataTable\DTHero.cs" />
+    <Compile Include="Script\Model\DataTable\DTHeroBase.cs" />
+    <Compile Include="Script\Model\DataTable\DTHeroConsciousnessBase.cs" />
+    <Compile Include="Script\Model\DataTable\DTHeroElevationBase.cs" />
+    <Compile Include="Script\Model\DataTable\DTInstance.cs" />
+    <Compile Include="Script\Model\DataTable\DTInstanceCosmosCrack.cs" />
+    <Compile Include="Script\Model\DataTable\DTInstanceStory.cs" />
+    <Compile Include="Script\Model\DataTable\DTItem.cs" />
+    <Compile Include="Script\Model\DataTable\DTMeridian.cs" />
+    <Compile Include="Script\Model\DataTable\DTMightLevelParam.cs" />
+    <Compile Include="Script\Model\DataTable\DTOperationActivity.cs" />
+    <Compile Include="Script\Model\DataTable\DTOperationActivitySevenDay.cs" />
+    <Compile Include="Script\Model\DataTable\DTPlayer.cs" />
+    <Compile Include="Script\Model\DataTable\DTPvpTitle.cs" />
+    <Compile Include="Script\Model\DataTable\DTRandomShop.cs" />
+    <Compile Include="Script\Model\DataTable\DTSkillLevelUp.cs" />
+    <Compile Include="Script\Model\DataTable\DTSoul.cs" />
+    <Compile Include="Script\Model\Consts\GameConsts.cs" />
+    <Compile Include="Script\CsScript\Common\AllQualitiesOfGears.cs" />
+    <Compile Include="Script\Model\DataTable\DTVipShop.cs" />
+    <Compile Include="Script\Model\ServerInfo.cs" />
+    <Compile Include="Script\Model\StorageStruct\ArenaRank.cs" />
+    <Compile Include="Script\Model\StorageStruct\FoundryRoom.cs" />
+    <Compile Include="Script\Model\StorageStruct\Hero.cs" />
+    <Compile Include="Script\Model\StorageStruct\InstanceProgress.cs" />
+    <Compile Include="Script\Model\StorageStruct\MightRankUser.cs" />
+    <Compile Include="Script\Model\StorageStruct\Player.cs" />
+    <Compile Include="Script\Model\StorageStruct\Gears.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerDailyQuest.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerAchievement.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerArena.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerChance.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerChat.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerChess.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerCosmosCrack.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerDefaultShop.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerEpigraph.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerFoundry.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerFriends.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerHeros.cs" />
+    <Compile Include="Script\Model\StorageStruct\HeroTeam.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerInstanceDrop.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerMail.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerMeridian.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerPackage.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerPosition.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerSevenDayCheckIn.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerStoryInstance.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerVipShop.cs" />
+    <Compile Include="Script\Model\StorageStruct\PVPMatchQueue.cs" />
+    <Compile Include="Script\Model\StorageStruct\PVPRoom.cs" />
+    <Compile Include="Script\Model\StorageStruct\RoomList.cs" />
+    <Compile Include="Script\Model\StorageStruct\RoomServer.cs" />
+    <Compile Include="Script\Model\Consts\Defines.cs" />
+    <Compile Include="Script\CsScript\Common\RoomServerManager.cs" />
+    <Compile Include="Script\CsScript\MainClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script\Model\StorageStruct\SinglePvpRankUser.cs" />
+    <Compile Include="Script\Model\StorageStruct\PlayerSinglePvp.cs" />
+    <Compile Include="Script\Model\StorageStruct\Souls.cs" />
+    <Compile Include="Script\Model\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{599b4b97-d27b-4539-9867-fd0b7e554d0b}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scut\Source\Framework\ZyGames.Framework.Common\ZyGames.Framework.Common4.5.csproj">
+      <Project>{e87a5049-85a1-436b-a5ed-2bc0a4e45bdb}</Project>
+      <Name>ZyGames.Framework.Common4.5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scut\Source\Framework\ZyGames.Framework\ZyGames.Framework4.5.csproj">
+      <Project>{416e2e00-4064-4d7a-87a2-a649ff120274}</Project>
+      <Name>ZyGames.Framework4.5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scut\Source\Middleware\ZyGames.Framework.Game\ZyGames.Framework.Game4.5.csproj">
+      <Project>{de7024b7-7168-4262-a250-6a21b932ec3b}</Project>
+      <Name>ZyGames.Framework.Game4.5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Script\CsScript\TestTool\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameServer.exe.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NLog.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+message PlayerHeros
+{
+    required int32 UserId = 1;
+    required string Heros = 2;
+}

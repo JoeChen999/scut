@@ -1,0 +1,18 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	Equip_Name_1		白武器1
+	Equip_Name_2		白武器2
+	Equip_Name_3		镔铁长棍
+	Equip_Name_4		微风法球
+	Equip_Name_5		突击之矛
+	Equip_Name_6		秘银短锤
+	Equip_Name_7		蓝刀1
+	Equip_Name_8		镇魂钩镰
+	Equip_Name_9		赤月长矛
+	Equip_Name_10		蓝法杖
+	Equip_Name_11		蓝书籍
+	Equip_Name_12		骑士之锤
+	Equip_Name_13		乌金长棍
+	Equip_Name_14		水月明珠

@@ -1,0 +1,7 @@
+#	附加技配置表																
+#	Id		AltSkillGroupId0	AltSkillGroupEnabled0	AltSkillEffect0	AltSkillGroupId1	AltSkillGroupEnabled1	AltSkillEffect1	AltSkillGroupId2	AltSkillGroupEnabled2	AltSkillEffect2	AltSkillGroupId3	AltSkillGroupEnabled3	AltSkillEffect3	AltSkillGroupId4	AltSkillGroupEnabled4	AltSkillEffect4
+#	int		int	bool	bool	int	bool	bool	int	bool	bool	int	bool	bool	int	bool	bool
+#	附加技编号	策划备注	连续技	连续技是否可用	连续技是否播放界面特效	技能1	技能1是否可用	技能1是否播放界面特效	技能2	技能2是否可用	技能2是否播放界面特效	技能3	技能3是否可用	技能3是否播放界面特效	技能4	技能4是否可用	技能4是否播放界面特效
+	11708	项羽鬼雄形态	117011	TRUE	FALSE	-1	TRUE	FALSE	-1	TRUE	FALSE	-1	TRUE	FALSE	-1	TRUE	FALSE
+	11108	杰克恶魔形态	111081	TRUE	FALSE	-1	TRUE	FALSE	-1	TRUE	FALSE	111089	TRUE	TRUE	-1	TRUE	FALSE
+	11806	范海辛枪旋转刃替换	118011	TRUE	FALSE	118069	TRUE	TRUE	-1	TRUE	FALSE	-1	TRUE	FALSE	-1	TRUE	FALSE

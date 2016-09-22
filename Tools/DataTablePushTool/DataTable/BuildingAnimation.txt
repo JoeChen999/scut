@@ -1,0 +1,5 @@
+#	建筑物动画配置表					
+#	Id		Entering	Default	Dying	Dead
+#	int		string	string	string	string
+#	建筑物编号	策划备注	入场动画	默认动画	将死动画	死亡动画
+	10001	DemoScene骨牢示例	bone_jail_entering	bone_jail_default	bone_jail_dying	bone_jail_dead

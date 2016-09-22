@@ -1,0 +1,32 @@
+#	武器动作表																																																									
+#	Id		Idle	Stand	Run	Hit	HitStrong	HitAir	HitAirStrong	Float	Falling	FallDown	StandUp	Stun	Rotate	BlownAway	BlownAwayFalling	Dying	Dead	FakeDying	FakeDead	StandUpAfterFakeDeath	Entering	DistanceAssist	ModelShowDebut	ModelShowStand	ModelInteraction1	ModelInteraction2	ModelInteraction3	Attack1	Attack2	Attack3	Attack4	Attack5	Skill1	Skill2	Skill3	Skill4	Skill5	Skill6	Skill7	Skill8	Skill9	Skill10	Skill11	Skill12	Skill13	Skill14	Skill15	Skill16	Skill17	Skill18	Skill19	Skill20	LingeringLeft	LingeringRight	ModelShowDebut	ModelShowStand
+#	int		string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string4	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string
+#	模型编号	策划备注	休闲动作名称	站立动作名称	跑步动作名称	受击动作名称	重受击动作名称	浮空受击动作名称	空中强力打击重击弹地	浮空动作名称	下落动作名称	倒地动作名称	起身动作名称	眩晕动作名称	旋转动作名称	击飞动作名称	击飞下落	死亡动作名称	死亡后动作名称	假死动作名称	假死后动作名称	假死后起身动作名称	出场动作名称	距离辅助攻击动作名称	展示模型用的出场动作名称	展示模型用的站立动作名称	与展示模型互动的动作名称	与展示模型互动的动作名称	与展示模型互动的动作名称	连续攻击第一段动作名称	连续攻击第二段动作名称	连续攻击第三段动作名称	连续攻击第四段动作名称	连续攻击第五段动作名称	固定技能一动作名称	固定技能二动作名称	固定技能三动作名称	固定技能四动作名称	固定技能五动作名称	固定技能六动作名称	固定技能七动作名称	固定技能八动作名称	固定技能九动作名称	选人界面演示动画	固定技能十一动作名称	固定技能十二动作名称	固定技能十三动作名称	固定技能十四动作名称	固定技能十五动作名称	固定技能十六动作名称	固定技能十七动作名称	固定技能十八动作名称	固定技能十九动作名称	固定技能二十动作名称	左徘徊	右徘徊	展示模型用的出场动作名称	展示模型用的站立动作名称
+	101	亚瑟王武器1																																																								
+	201	荆轲武器1左																																																								
+	202	荆轲武器1右																																																								
+	301	狮心王武器1																																																								
+	401	卡特琳娜武器1左																																																								
+	402	卡特琳娜武器1右																																																								
+	501	梅林武器1小球																																																								
+	502	梅林武器1外框																																																								
+	601	凯撒武器1左																																																								
+	602	凯撒武器1右																																																								
+	701	黑胡子武器1左枪																																																								
+	702	黑胡子武器1右刀																																																								
+	801	链球男武器1																																																								
+	901	小萝莉																																																								
+	1001	血腥玛丽武器1																																																								
+	1101	贞德武器1																																																								
+	1201	杰克武器1																																																								
+	1301	达芬奇武器1左																															combo_4_weapon_l		skill_1_1_weapon_l	skill_1_2_weapon_l	skill_1_3_weapon_l		skill_3_1_weapon_l	skill_3_2_weapon_l	skill_3_3_weapon_l																	
+	1302	达芬奇武器1右																															combo_4_weapon_r		skill_1_1_weapon_r	skill_1_2_weapon_r	skill_1_3_weapon_r		skill_3_1_weapon_r	skill_3_2_weapon_r	skill_3_3_weapon_r																	
+	1401	范海辛武器1枪																																																								
+	1402	范海辛武器1齿轮刃																																																								
+	1501	埃及艳后武器1																																																								
+	1601	岳飞武器1																							basic_idle_weapon		basic_idle_weapon	basic_idle_weapon	basic_idle_weapon	combo_1_weapon	combo_2_weapon	combo_3_weapon	combo_4_weapon	combo_5_weapon					skill_3_1_weapon	skill_3_2_weapon	skill_3_3_weapon	skill_4_weapon																
+	1701	日本浪人武器1																																																								
+	1801	项羽武器1																																																								
+	1901	噬毒者喷头																																																								
+	1902	噬毒者毒瓶																																																								
+	2001	虞姬武器1																																																								

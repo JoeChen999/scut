@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<script type="text/javascript" language="JavaScript">
+ function EnableEdit(name)
+ {
+    document.getElementsByName(name)[0].disabled=false;
+ }
+</script>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}资源管理配置{% endblock %}
+    {% block content %}
+    <p class="title">Resource Manager</p>
+    <form method="post">
+    <table id="configTable" border="2" style="color:#7a8f9f">
+    {% for key, value in resource_data.items %}
+        <tr>
+            <td>{{key}}</td>
+            <td><input type="text" name="{{key}}" value="{{value}}" disabled /></td>
+            <td><input type="button" value="Edit" onclick="EnableEdit('{{key}}')"></td>
+        </tr>
+    {% endfor %}
+    {% for key, value in version_data.items %}
+        <tr><td colspan="3">{{key}}</td></tr>
+        {% for k, v in value.items %}
+        <tr>
+            <td>{{k}}</td>
+            <td><input type="text" name="{{key}}_{{k}}" value="{{v}}" disabled /></td>
+            <td><input type="button" value="Edit" onclick="EnableEdit('{{key}}_{{k}}')"></td>
+        </tr>
+        {% endfor %}
+    {% endfor %}
+        <tr><td colspan="3" align="center"><input type="submit" value="submit"></td></tr>
+    </table>
+    </form>
+    <p style="color:#FF0000;font-size:20">{{info}}</p>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	PROPAGANDA_BATTLE_001		去我们身后的战场保护自由圣旗，一切为自由而战。
+	PROPAGANDA_BATTLE_002		敌袭！敌袭！一起应战！
+	PROPAGANDA_BATTLE_003		这里暂时安全，赶紧去帮助其他英灵战胜异魔！
+	PROPAGANDA_BATTLE_004		哈哈哈哈！梅林，凭你就想挡住我吗？去死吧！
+	PROPAGANDA_BATTLE_005		区区异魔，看我破你诡计！
+	PROPAGANDA_BATTLE_006		闯入者？小的们，干掉他！
+	PROPAGANDA_BATTLE_007		等候多时了！
+	PROPAGANDA_BATTLE_009		一群废物，最后还得我自己动手。
+	PROPAGANDA_BATTLE_010		你的好运到此结束了！
+	PROPAGANDA_BATTLE_011		拿开你的脏手！那是我的宝藏！
+	PROPAGANDA_BATTLE_012		嘁！区区一个分身，看我灭了你！
+	PROPAGANDA_BATTLE_013		圣洁的法灵啊，净化吧！救赎吧！
+	PROPAGANDA_BATTLE_014		这片暗淡的世界，只因有你，我愿化作一瞬的烟火！
+	PROPAGANDA_BATTLE_015		我本阴影，一起，归于黑暗！
+	PROPAGANDA_BATTLE_016		堂堂正正，一较高下！
+	PROPAGANDA_BATTLE_017		堂堂正正，一较高下！
+	PROPAGANDA_BATTLE_018		吾王在上，容我再添荣光！
+	PROPAGANDA_BATTLE_019		打败你，人民就能过上好日子吗？
+	PROPAGANDA_BATTLE_020		为了自由，圣战吧！
+	PROPAGANDA_BATTLE_021		嗷！我……不会……死！不会！！
+	PROPAGANDA_BATTLE_022		大人！小女子来助你！
+	PROPAGANDA_STORY_001		亚瑟王

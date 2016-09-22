@@ -1,0 +1,6 @@
+#	切场景背景图配置表			
+#	Id		TexturePath	Weight
+#	int		string	float
+#	切场景背景图编号	策划备注	背景图路径	背景图出现概率权重
+	1		Background/background_001	0.5
+	2		Background/background_002	0.5

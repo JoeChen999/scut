@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFA98E64-09AB-4F43-B58D-0EFAA8486B41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Genesis.GameServer.LobbyServer</RootNamespace>
+    <AssemblyName>LobbyServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="jpush-api">
+      <HintPath>.\jpush-api.dll</HintPath>
+    </Reference>
+    <Reference Include="KopiLua, Version=1.3.5289.19231, Culture=neutral, PublicKeyToken=e25f4af1e4f7b31c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\KopiLua.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.9.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.9.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=3.2.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLua, Version=1.3.0.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\NLua.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.9.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=3.9.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=3.9.53.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scut\Source\Framework\Lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\RoomServer\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Script\CsScript\Common\LobbyServerSender.cs" />
+    <Compile Include="Script\CsScript\Common\LobbyServerManager.cs" />
+    <Compile Include="Script\CsScript\LogicModule\PvpLogic.cs" />
+    <Compile Include="Script\CsScript\Rankings\SinglePvpRanking.cs" />
+    <Compile Include="Script\CsScript\Remote\LWGetWorldSinglePvpRankHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\LWRegisterLobbyServerHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\LWCancelSinglePvpMatchingHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\LWStartSinglePvpMatchingHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\RWPvpResultHandler.cs" />
+    <Compile Include="Script\Model\CacheSet.cs" />
+    <Compile Include="Script\CsScript\Common\CustomActionDispatcher.cs" />
+    <Compile Include="Script\CsScript\Common\RoomServerSender.cs" />
+    <Compile Include="Script\CsScript\Remote\RLRegisterRoomServerHandler.cs" />
+    <Compile Include="Script\CsScript\Remote\RLUpdateServerStateHandler.cs" />
+    <Compile Include="Script\CsScript\Locale\SimplifiedLanguage.cs" />
+    <Compile Include="Script\Model\Consts\GameConsts.cs" />
+    <Compile Include="Script\Model\Contract\LWCancelSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\LWGetWorldSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\LWPvpResult.cs" />
+    <Compile Include="Script\Model\Contract\LWStartSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\PBAchievementInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBActivityInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBArenaBattleReport.cs" />
+    <Compile Include="Script\Model\Contract\PBArenaPlayerAndTeamInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBBlownAwayImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBChessField.cs" />
+    <Compile Include="Script\Model\Contract\PBCosmosCrackInstanceInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBDailyQuestInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBDropInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBEmailInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBEpigraphInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBFloatImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBFreezeImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBGearFoundryInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBGearFoundryPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBGearFoundryProgressInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBGearInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBHardHitImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBHeroTeamInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBHPDamageImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBHPRecoverImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBInstance.cs" />
+    <Compile Include="Script\Model\Contract\PBInstanceDrop.cs" />
+    <Compile Include="Script\Model\Contract\PBInt64.cs" />
+    <Compile Include="Script\Model\Contract\PBItemInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBKeyValuePair.cs" />
+    <Compile Include="Script\Model\Contract\PBLobbyHeroInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBLobbyHeroStatus.cs" />
+    <Compile Include="Script\Model\Contract\PBMatchingPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBMeridianInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBReceivedItems.cs" />
+    <Compile Include="Script\Model\Contract\PBRoomHeroInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBRoomInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBRoomPlayerInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBShopItem.cs" />
+    <Compile Include="Script\Model\Contract\PBSoulInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBSoundAndEffectImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBSteadyDamageImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBStiffnessImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBStunImpact.cs" />
+    <Compile Include="Script\Model\Contract\PBTrackingAchievement.cs" />
+    <Compile Include="Script\Model\Contract\PBTrackingDailyQuest.cs" />
+    <Compile Include="Script\Model\Contract\PBTransformInfo.cs" />
+    <Compile Include="Script\Model\Contract\PBVector2.cs" />
+    <Compile Include="Script\Model\Contract\PBVector3.cs" />
+    <Compile Include="Script\Model\Contract\RWCreateNewRoom.cs" />
+    <Compile Include="Script\Model\Contract\RWGetGameConfigs.cs" />
+    <Compile Include="Script\Model\Contract\RWPvpResult.cs" />
+    <Compile Include="Script\Model\Contract\WLCancelSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\WLGetWorldSinglePvpRank.cs" />
+    <Compile Include="Script\Model\Contract\WLMatchSuccess.cs" />
+    <Compile Include="Script\Model\Contract\WLPvpResult.cs" />
+    <Compile Include="Script\Model\Contract\WLStartSinglePvpMatching.cs" />
+    <Compile Include="Script\Model\Contract\WRCreateNewRoom.cs" />
+    <Compile Include="Script\Model\ServerInfo.cs" />
+    <Compile Include="Script\Model\StorageStruct\Gears.cs" />
+    <Compile Include="Script\Model\StorageStruct\Hero.cs" />
+    <Compile Include="Script\Model\StorageStruct\LobbyServer.cs" />
+    <Compile Include="Script\Model\StorageStruct\PVPMatchQueue.cs" />
+    <Compile Include="Script\Model\StorageStruct\PvpPlayer.cs" />
+    <Compile Include="Script\Model\StorageStruct\PVPRoom.cs" />
+    <Compile Include="Script\Model\StorageStruct\RoomList.cs" />
+    <Compile Include="Script\Model\StorageStruct\MatchingPlayer.cs" />
+    <Compile Include="Script\Model\StorageStruct\RoomServer.cs" />
+    <Compile Include="Script\Model\Consts\Defines.cs" />
+    <Compile Include="Script\CsScript\Common\RoomServerManager.cs" />
+    <Compile Include="Script\CsScript\MainClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script\Model\StorageStruct\SinglePvpRankUser.cs" />
+    <Compile Include="Script\Model\StorageStruct\Souls.cs" />
+    <Compile Include="Script\Model\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{599b4b97-d27b-4539-9867-fd0b7e554d0b}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scut\Source\Framework\ZyGames.Framework.Common\ZyGames.Framework.Common4.5.csproj">
+      <Project>{e87a5049-85a1-436b-a5ed-2bc0a4e45bdb}</Project>
+      <Name>ZyGames.Framework.Common4.5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scut\Source\Framework\ZyGames.Framework\ZyGames.Framework4.5.csproj">
+      <Project>{416e2e00-4064-4d7a-87a2-a649ff120274}</Project>
+      <Name>ZyGames.Framework4.5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scut\Source\Middleware\ZyGames.Framework.Game\ZyGames.Framework.Game4.5.csproj">
+      <Project>{de7024b7-7168-4262-a250-6a21b932ec3b}</Project>
+      <Name>ZyGames.Framework.Game4.5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Script\CsScript\Action\" />
+    <Folder Include="Script\CsScript\TestTool\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameServer.exe.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NLog.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

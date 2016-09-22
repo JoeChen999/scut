@@ -1,0 +1,53 @@
+#	建筑物配置表																																	
+#	Id		Name	Category	CampType	ResourceName	ShooterPath	Scale	PositionX	PositionY	Angle	ShowName	ShowHPBar	HPBarCount	KeepTime	AIBehavior	DropRuleId	ChestId	Level	DamageRandomRate	MaxHPFactor	PhysicalAttackFactor	PhysicalDefenseFactor	MagicAttackFactor	MagicDefenseFactor	CountForPlayerKill	ElementId	ImpactCenterX	ImpactCenterY	ImpactCenterZ	ImpactRadius	ImpactHeight	EnteringEffect	EnteringEffectTransformPath
+#	int		string	int	int	string	string	float	float	float	float	bool	bool	int	float	string	int	int	int	float	float	float	float	float	float	bool	int	float	float	float	float	float	string	string
+#	建筑物编号	策划备注	名称	建筑类型	阵营	资源名称	发射器路径	模型缩放比例	坐标位置X	坐标位置Y	朝向	是否显示名字	是否持续显示血条	血条数量	死亡后模型保持时间（秒）	AI行为	掉落规则编号	宝箱掉落编号	等级	伤害浮动比率	生命倍率	物理攻击倍率	物理防御倍率	法术攻击倍率	法术防御倍率	是否计算入玩家击杀	克制属性编号	伤害触发中心点X	伤害触发中心点Y	伤害触发中心点Z	伤害触发半径	伤害触发高度	入场特效资源路径	入场特效绑点路径
+	1	DemoScene建筑物范例	BUILDING_NAME_1	0	1	TestBuilding	Shooter	1	13	10	0	FALSE	FALSE	1	5	Buildings/TestBuilding2	0	-1	10	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.5	3		
+	2	风之羽毛阵眼01	BUILDING_NAME_2	0	1	TestBuilding	Shooter	1	-0.57	-5.52	0	FALSE	TRUE	2	5	Buildings/Level23Zhenyan	0	-1	27	0.05	1.2	1.09	1.03	1.06	1	TRUE	1	0	1.5	0	0.5	3		
+	3	风之羽毛阵眼02	BUILDING_NAME_2	0	1	TestBuilding	Shooter	1	-5.69	0.31	0	FALSE	TRUE	2	5	Buildings/Level23Zhenyan	0	-1	27	0.05	1.2	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	4	风之羽毛阵眼03	BUILDING_NAME_2	0	1	TestBuilding	Shooter	1	-0.43	5.93	0	FALSE	TRUE	2	5	Buildings/Level23Zhenyan	0	-1	27	0.05	1.2	1.09	1.03	1.06	1	TRUE	3	0	1.5	0	0.5	3		
+	5	29级副本宝箱01	BUILDING_NAME_3	0	1	baoxiang_001	Shooter	1	15.72	-25.22	0	FALSE	TRUE	1	5	Buildings/Level29Baoxiang	0	-1	29	0.05	1.2	1.09	1.03	1.06	1	TRUE	4	0	1.5	0	0.5	3		
+	6	29级副本宝箱02	BUILDING_NAME_3	0	1	baoxiang_001	Shooter	1	0.6	-39.2	0	FALSE	TRUE	1	5	Buildings/Level29Baoxiang	0	-1	29	0.05	1.2	1.09	1.03	1.06	1	TRUE	5	0	1.5	0	0.5	3		
+	7	29级副本宝箱03	BUILDING_NAME_3	0	1	baoxiang_001	Shooter	1	13.6	-37.7	0	FALSE	TRUE	1	5	Buildings/Level29Baoxiang	0	-1	29	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.5	3		
+	8	29级副本宝箱04	BUILDING_NAME_3	0	1	baoxiang_001	Shooter	1	20.2	9.2	0	FALSE	TRUE	1	5	Buildings/Level29Baoxiang	0	-1	29	0.05	1.2	1.09	1.03	1.06	1	TRUE	1	0	1.5	0	0.5	3		
+	9	29级副本宝箱05	BUILDING_NAME_3	0	1	baoxiang_001	Shooter	1	-21.5	25.6	0	FALSE	TRUE	1	5	Buildings/Level29Baoxiang	0	-1	29	0.05	1.2	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	10	29级副本宝箱06	BUILDING_NAME_3	0	1	baoxiang_001	Shooter	1	-29.14	12.7	0	FALSE	TRUE	1	5	Buildings/Level29Baoxiang	0	-1	29	0.05	1.2	1.09	1.03	1.06	1	TRUE	3	0	1.5	0	0.5	3		
+	11	29级副本宝箱07	BUILDING_NAME_3	0	1	baoxiang_001	Shooter	1	11.9	17.6	0	FALSE	TRUE	1	5	Buildings/Level29Baoxiang	0	-1	29	0.05	1.2	1.09	1.03	1.06	1	TRUE	4	0	1.5	0	0.5	3		
+	12	37级副本陷阱01	BUILDING_NAME_4	0	1	TestBuilding	Shooter	1	10.02	-11.36	0	FALSE	TRUE	2	5	Buildings/Level37xianjing	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	5	0	1.5	0	0.5	3		
+	13	37级副本陷阱02	BUILDING_NAME_4	0	1	TestBuilding	Shooter	1	12.1	29.16	0	FALSE	TRUE	2	5	Buildings/Level37xianjing	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.6	3		
+	14	37级副本陷阱03	BUILDING_NAME_4	0	1	TestBuilding	Shooter	1	-37.27	30.75	0	FALSE	TRUE	2	5	Buildings/Level37xianjing	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	1	0	1.5	0	0.5	3		
+	15	37级副本阵眼01	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	2.48	-22.52	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	16	37级副本阵眼02	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	16.56	34.3	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	3	0	1.5	0	0.5	3		
+	17	37级副本阵眼03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-41	30	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	4	0	1.5	0	0.5	3		
+	18	43级副本阵眼03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-33.14	19.83	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	5	0	1.5	0	0.5	3		
+	19	43级副本阵眼03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	14.3	24.83	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.5	3		
+	20	43级副本阵眼03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	6.49	-18.98	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	1	0	1.5	0	0.5	3		
+	21	51级副本魔阵01	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	12.85	-11.25	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	22	51级副本魔阵02	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	22.41	-10.87	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	3	0	1.5	0	0.5	3		
+	23	51级副本魔阵03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	16.86	-3.57	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	4	0	1.5	0	0.5	3		
+	24	56级副本魔阵	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-74.39	5.049998	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	5	0	1.5	0	0.5	3		
+	25	59级副本魔阵01	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	6.63	31.86	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.5	3		
+	26	59级副本魔阵02	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	3.87	23.45	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	1	0	1.5	0	0.5	3		
+	27	59级副本魔阵03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	15.83	21.47	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	28	59级副本魔阵04	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	17.62	27.73	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	3	0	1.5	0	0.5	3		
+	29	59级副本魔阵05	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	16.06	31.1	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	4	0	1.5	0	0.5	3		
+	30	65级副本净化之源	BUILDING_NAME_5	0	6	TestBuilding	Shooter	1	0.02	-0.05	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	70	0.05	1.2	1.09	1.03	1.06	1	TRUE	5	0	1.5	0	0.5	3		
+	31	67级副本机关开关01	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-35.86	27.44	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	80	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.5	3		
+	32	67级副本机关开关02	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-43.75	36.2	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	80	0.05	1.2	1.09	1.03	1.06	1	TRUE	1	0	1.5	0	0.5	3		
+	33	67级副本机关开关03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-52.36	28	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	80	0.05	1.2	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	34	67级副本机关开关04	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-43.51	21.65	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	80	0.05	1.2	1.09	1.03	1.06	1	TRUE	3	0	1.5	0	0.5	3		
+	35	67级副本机关开关总	BUILDING_NAME_5	0	1	TestBuilding	Shooter	1	-44.84	27.66	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	80	0.05	1.2	1.09	1.03	1.06	1	TRUE	4	0	1.5	0	0.5	3		
+	36	68级副本阵眼01	BUILDING_NAME_5	0	6	TestBuilding	Shooter	1	-10.92	6.66	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	5	0	1.5	0	0.5	3		
+	37	68级副本阵眼02	BUILDING_NAME_5	0	6	TestBuilding	Shooter	1	-16.04	6.81	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.5	3		
+	38	68级副本阵眼03	BUILDING_NAME_5	0	6	TestBuilding	Shooter	1	-15.85	11.6	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	1	0	1.5	0	0.5	3		
+	39	68级副本阵眼04	BUILDING_NAME_5	0	6	TestBuilding	Shooter	1	-10.88	11.49	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	40	70级副本召唤阵	BUILDING_NAME_5	0	6	TestBuilding	Shooter	1	0	0	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	12	12	12	12	12	TRUE	3	0	1.5	0	0.5	3		
+	41	72级副本通天魔阵01	BUILDING_NAME_5	0	1	TestBuilding	Shooter	2	6.68	19.01	90	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	4	0	1.5	0	0.5	3		
+	42	72级副本通天魔阵02	BUILDING_NAME_5	0	1	TestBuilding	Shooter	2	6.24	-7.67	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	5	0	1.5	0	0.5	3		
+	43	72级副本通天魔阵03	BUILDING_NAME_5	0	1	TestBuilding	Shooter	2	-16.19	-10.04	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	40	0.05	1.2	1.09	1.03	1.06	1	TRUE	0	0	1.5	0	0.5	3		
+	44	80级副本魔尊雕像	BUILDING_NAME_5	0	1	TestBuilding	Shooter	2	11.11	34.43	0	FALSE	TRUE	2	5	Buildings/Level37zhenyan	0	-1	80	20	20	20	20	20	20	TRUE	1	0	1.5	0	0.5	3		
+	45	1级副本彩蛋宝箱	BUILDING_NAME_5	0	1	baoxiang_001	Shooter	1	-9.41	-9.62	58.1	FALSE	FALSE	1	300	Buildings/Level1baoxiang	0	0	1	0.05	0.0001	1.09	1.03	1.06	1	TRUE	2	0	1.5	0	0.5	3		
+	46	13级魔源	BUILDING_NAME_5	0	1	mowangxiang_001	Shooter	1	53.37	44.35	-108.06	FALSE	FALSE	1	3	Buildings/Level1mowangxiang	0	-1	13	0.05	100	3.5	80	3.5	80	TRUE	3	0	1.5	0	0.5	3		
+	47	16级魔源	BUILDING_NAME_1	2	1	mowangxiang_001	Shooter	1	9.94	9	-142.2	FALSE	FALSE	15	3	Buildings/Level16mozhiyuan	0	-1	16	0.05	100	3.5	80	3.5	80	TRUE	4	0	1.5	0	0.5	3		
+	48	18级自由圣旗	BUILDING_NAME_2	0	1	shoushunlongmai_001	Shooter	1	-9.32	-9.58	64.2	FALSE	FALSE	1	3	Buildings/Level18ziyoushengqi	0	-1	18	0.05	200	3.5	100	3.5	100	TRUE	5	0	1.5	0	0.5	3		
+	10001	DemoScene骨牢范例	BUILDING_NAME_1	0	1	TestBoneJail	Shooter	1	13	10	0	FALSE	TRUE	1	10	Buildings/Empty	0	-1	20	0.05	20	1	1	1	1	TRUE	0	0	1.5	0	1.5	3	Characters/Npcs/monster_001_jianchixiong_001/effect_jianchixiong_001_skill2	

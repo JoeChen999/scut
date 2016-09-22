@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<script type="text/javascript" language="JavaScript">
+ function EnableEdit(name)
+ {
+    document.getElementsByName(name)[0].disabled=false;
+ }
+ function AddRow()
+ {
+    var table = document.getElementById("configTable");
+    var row = table.insertRow(table.rows.length - 1);
+    var newtd0 = row.insertCell();
+    var newtd1 = row.insertCell();
+    newtd0.innerHTML = '<input type="text" name="keys[]" />';
+    newtd1.innerHTML = '<input type="text" name="values[]" />';
+ }
+ function FilterRow()
+ {
+    filterStr = document.getElementById("filter").value;
+    var table = document.getElementById("configTable");
+    for(var i=0; i<table.rows.length; i++)
+    {
+        row = table.getElementsByTagName("tr")[i];
+        if(row.innerText.indexOf(filterStr) < 0)
+        {
+            row.hidden = true;
+        }
+        else
+        {
+            row.hidden = false;
+        }
+    }
+ }
+</script>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}后台配置{% endblock %}
+    {% block content %}
+    <p class="title">Game Configs</p>
+    <b style="color:#7a8f9f">Filter: </b><input type="text" id="filter" oninput="FilterRow()"/><a href="/gameconfigs"> cancel</a>
+    <form method="post">
+    <table id="configTable" border="2" style="color:#7a8f9f">
+    {% for key, value in configtable %}
+        <tr>
+            <td>{{key}}</td>
+            <td><input type="text" name="{{key}}" value="{{value}}" disabled /></td>
+            <td><input type="button" value="Edit" onclick="EnableEdit('{{key}}')"></td>
+        </tr>
+    {% endfor %}
+        <tr><td colspan="3" align="center"><input type="button" value="Add" onclick="AddRow()">
+            <input type="hidden" name="serverid" value="{{serverid}}"><input type="submit" value="submit"></td></tr>
+    </table>
+    </form>
+    <p style="color:#FF0000;font-size:20">{{info}}</p>
+    {% endblock %}
+</body>
+</html>

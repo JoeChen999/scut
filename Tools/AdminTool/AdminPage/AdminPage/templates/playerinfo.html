@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}player info{% endblock %}
+    {% block content %}
+    <p class="title">Player Info</p>
+    <form method="post" >
+        <table border="2" style="color:#7a8f9f">
+            <tr>
+                <td>KEYS:</td>
+                <td><select name='key' id='key'>
+                    {% for key in keys %}
+                    <option value= "{{ key }}">{{ key }}</option>
+                    {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>field</td>
+                <td><input type="text" name="field"></td>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type = "submit" value="flush" onclick="document.getElementById('action').value = 'flush';">
+                    <input type="submit" value="view" onclick="document.getElementById('action').value = 'view';">
+                    <input type="hidden" id="action" name="action" value="view">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+    {% autoescape off %}
+    {{ info }}
+    {% endautoescape %}
+    {% endblock %}
+</body>
+</html>

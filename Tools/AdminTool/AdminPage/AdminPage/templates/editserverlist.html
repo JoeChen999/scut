@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}{% endblock %}
+    {% block content %}
+    <p class="title">Edit Server List</p>
+    <a href="/beTools/serverList/manage" style="font-size:20px"><-Return</a><br><br>
+    <form method="post" >
+        <table border="2" style="color:#7a8f9f">
+            <tr>
+                <td>Id:</td>
+                {% if id %}
+                <td><input type="text" name="Id" readonly="true" value="{{id}}"></td>
+                {% else %}
+                <td><input type="text" name="Id"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Name:</td>
+                {% if name %}
+                <td><input type="text" name="Name" value="{{name}}"></td>
+                {% else %}
+                <td><input type="text" name="Name"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Description</td>
+                {% if description %}
+                <td><input type="text" name="Description" value="{{description}}"></td>
+                {% else %}
+                <td><input type="text" name="Description"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Status</td>
+                {% if name %}
+                <td><input type="text" name="Status" value="{{status}}"></td>
+                {% else %}
+                <td><input type="text" name="Status"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Address</td>
+                {% if address %}
+                <td><input type="text" name="Address" value="{{address}}"></td>
+                {% else %}
+                <td><input type="text" name="Address"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Port</td>
+                {% if port %}
+                <td><input type="text" name="Port" value="{{port}}"></td>
+                {% else %}
+                <td><input type="text" name="Port"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>TabId</td>
+                {% if name %}
+                <td><input type="text" name="TabId" value="{{tabid}}"></td>
+                {% else %}
+                <td><input type="text" name="TabId"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>Recommended</td>
+                {% if name %}
+                <td><input type="text" name="Recommended" value="{{recommended}}"></td>
+                {% else %}
+                <td><input type="text" name="Recommended"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>DictionaryUrl</td>
+                {% if name %}
+                <td><input type="text" name="DictionaryUrl" value="{{dictionaryurl}}"></td>
+                {% else %}
+                <td><input type="text" name="DictionaryUrl"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>DataTableUrl</td>
+                {% if name %}
+                <td><input type="text" name="DatatableUrl" value="{{datatableurl}}"></td>
+                {% else %}
+                <td><input type="text" name="DatatableUrl"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td>MetaFileUrl</td>
+                {% if name %}
+                <td><input type="text" name="MetaFileUrl" value="{{metafileurl}}"></td>
+                {% else %}
+                <td><input type="text" name="MetaFileUrl"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    {% if name %}
+                    <input type="hidden" name="action" value="edit">
+                    <input type = "submit" value="edit">
+                    {% else %}
+                    <input type="hidden" name="action" value="add">
+                    <input type = "submit" value="add">
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+    {% autoescape off %}
+    {{ info }}
+    {% endautoescape %}
+    {% endblock %}
+</body>
+</html>

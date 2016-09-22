@@ -1,0 +1,33 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	ITEM_NAME_1		低级经验丹
+	ITEM_NAME_2		中级经验丹
+	ITEM_NAME_3		高级经验丹
+	ITEM_NAME_4		顶级经验丹
+	ITEM_NAME_5		飞升丹
+	ITEM_NAME_6		蓝色强化石
+	ITEM_NAME_7		紫色强化石
+	ITEM_NAME_8		橙色强化石
+	ITEM_NAME_9		亚瑟王灵魂石
+	ITEM_NAME_10		荆轲灵魂石
+	ITEM_NAME_11		狮心王灵魂石
+	ITEM_NAME_12		卡特琳娜灵魂石
+	ITEM_NAME_13		梅林灵魂石
+	ITEM_NAME_14		凯撒灵魂石
+	ITEM_NAME_15		黑胡子灵魂石
+	ITEM_NAME_16		斯巴达克斯灵魂石
+	ITEM_NAME_17		花木兰灵魂石
+	ITEM_NAME_18		血腥玛丽灵魂石
+	ITEM_NAME_19		圣女贞德灵魂石
+	ITEM_NAME_20		开膛手杰克灵魂石
+	ITEM_NAME_21		达芬奇灵魂石
+	ITEM_NAME_22		范海辛灵魂石
+	ITEM_NAME_23		埃及艳后灵魂石
+	ITEM_NAME_24		岳飞灵魂石
+	ITEM_NAME_25		佐罗灵魂石
+	ITEM_NAME_26		霸王项羽灵魂石
+	ITEM_NAME_27		侠盗罗宾汉灵魂石
+	ITEM_NAME_28		虞姬灵魂石
+	ITEM_NAME_29		通用灵魂石

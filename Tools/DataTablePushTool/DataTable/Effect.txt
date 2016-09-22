@@ -1,0 +1,9 @@
+#	特效配置表		
+#	Id		ResourceName
+#	int		
+#	特效编号	策划备注	资源路径
+	1	埃及艳后爆炸特效	Characters/Hit/hit_aijiyanhou_skill1_1
+	2	噬毒者毒雾爆炸	Characters/Hit/effects_hero_001_penduzhe_001_combo4_02
+	4	冰冻特效	Characters/Debuff/default_freeze
+	5	冰冻结束破冰	Characters/Debuff/default_freezebreak
+	6	眩晕特效	Characters/Debuff/default_stun

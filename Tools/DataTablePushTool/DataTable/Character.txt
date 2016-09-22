@@ -1,0 +1,123 @@
+#	角色模型表																		
+#	Id		ResourceName	ResourceNameForLobby	ResourceNameForShow	ColliderRadius	ColliderHeight	ImpactCenterX	ImpactCenterY	ImpactCenterZ	ImpactRadius	ImpactHeight	MaterialType	HitPoint0	HitPoint1	HitPoint2	StunEffectPoint	FreezeEffectPoint	FreezeBrokenEffectPoint
+#	int		string	string	string	float	float	float	float	float	float	float	int	string	string	string	string	string	string
+#	模型编号	策划备注	资源名称	大厅用资源名称	展示用资源名称	寻路/碰撞半径	寻路/碰撞高度	伤害触发中心点X	伤害触发中心点Y	伤害触发中心点Z	伤害触发半径	伤害触发高度	材质类型	受击点1	受击点2	受击点3	眩晕特效点	冰冻特效点	冰冻结束特效点
+	100	亚瑟王	Players/KingArthur	PlayersForLobby/KingArthur	PlayersForShow/KingArthur	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	101	荆轲	Players/JingKe	PlayersForLobby/JingKe	PlayersForShow/JingKe	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	102	狮心王	Players/Lionheart	PlayersForLobby/Lionheart	PlayersForShow/Lionheart	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	103	卡特琳娜	Players/Katarina	PlayersForLobby/Katarina	PlayersForShow/Katarina	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	104	梅林	Players/Merlin	PlayersForLobby/Merlin	PlayersForShow/Merlin	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	105	凯撒	Players/Caesar	PlayersForLobby/Caesar	PlayersForShow/Caesar	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	106	黑胡子	Players/Blackbeard	PlayersForLobby/Blackbeard	PlayersForShow/Blackbeard	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	107	斯巴达克斯	Players/Spartacus	PlayersForLobby/Spartacus	PlayersForShow/Spartacus	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	108	小萝莉	Players/Huamulan	PlayersForLobby/Huamulan	PlayersForShow/Huamulan	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	109	血腥玛丽	Players/Blackbeard	PlayersForLobby/Blackbeard	PlayersForShow/Blackbeard	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	110	贞德	Players/Jeannedarc	PlayersForLobby/Jeannedarc	PlayersForShow/Jeannedarc	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	111	杰克	Players/Jack	PlayersForLobby/Jack	PlayersForShow/Jack	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	112	达芬奇	Players/DaVinci	PlayersForLobby/DaVinci	PlayersForShow/DaVinci	0.8	2.3	0	0.7	0	0.6	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	113	范海辛	Players/VanHelsing	PlayersForLobby/VanHelsing	PlayersForShow/VanHelsing	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	114	艳后	Players/Cleopatra	PlayersForLobby/Cleopatra	PlayersForShow/Cleopatra	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	115	岳飞	Players/YueFei	PlayersForLobby/YueFei	PlayersForShow/YueFei	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	116	日本浪人	Players/Ribenlangren	PlayersForLobby/Ribenlangren	PlayersForShow/Ribenlangren	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	117	项羽	Players/Xiangyu	PlayersForLobby/Xiangyu	PlayersForShow/Xiangyu	0.5	0.3	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	118	噬毒者	Players/Penduzhe	PlayersForLobby/Penduzhe	PlayersForShow/Penduzhe	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	119	虞姬	Players/Yuji	PlayersForLobby/Yuji	PlayersForShow/Yuji	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	120	链球男	Players/Lianqiunan	PlayersForLobby/Lianqiunan	PlayersForShow/Lianqiunan	0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	121	小萝莉	Players/Xiaoluoli	PlayersForLobby/Xiaoluoli	PlayersForShow/Xiaoluoli	0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	500	魔化轻步兵	Npcs/mohuaqingbubing			0.2	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	501	魔化弓箭手	Npcs/mohuagongjianshou			0.2	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	502	骷髅兵	Npcs/kuloudaobing_001			0.2	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	503	骷髅弓箭手	Npcs/kulougongshou_001			0.2	1.8	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	504	亡灵重甲将军	Npcs/wanglingzhongjiajiangjun_001			0.8	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	505	盗贼	Npcs/daozei_001			0.2	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	506	青狼	Npcs/qinglang_001			0.5	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	507	魔化盾斧兵	Npcs/mohuadunfubing_001			0.8	2.5	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	508	剑齿熊	Npcs/jianchixiong_001			0.8	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	509	弓箭手	Npcs/gongjianshou_001			0.2	2	0	0.8	0	0.5	1.6	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	510	银甲狼人	Npcs/shouzhuaxi_yinjialangren_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	511	亚历山大	Players/KingArthur			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	512	屠夫	Npcs/tufu_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	513	杀手	Npcs/shashou_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	514	邪恶法师	Npcs/xieefashi_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	515	血犀	Npcs/xuexi_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	516	魔之源	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	517	开膛手杰克	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	518	死灵战士	Npcs/silingzhanshi_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	519	自由圣旗	Npcs/mohuaqingbubing			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	520	死灵刺客	Npcs/silingcike_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	521	镰刃死神	Npcs/liandaosishen_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	522	地狱犬	Npcs/diyusantouquan_001			0.8	1.8	0	0.7	0	0.5	2	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	523	恶鬼	Npcs/mohuaqingbubing			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	524	龙脉战魂	Npcs/longmaizhanhun_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	525	汉军轻甲兵	Npcs/mohuahanjunqingjiabubing_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	526	汉军弩兵	Npcs/mohuahanjunnubing_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	527	巨颚蝎	Npcs/mohuaqingbubing			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	528	骷髅盾兵	Npcs/kuloudunpaibing_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	529	魔化重甲兵	Npcs/mohuazhongjiabubing_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	530	陷阱-冰囚	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	531	陷阱-火爆	Npcs/jianchixiong_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	532	陷阱-毒侵	Npcs/mohuadunfubing_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	533	陷阱-全随机	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	534	钻车	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	535	哈桑	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	536	兰斯洛特	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	537	汉尼拔	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	538	封印之柱	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	539	龙脉	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	540	阿喀琉斯	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	541	魔尊	Npcs/yimowangdian_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	542	魔王殿	Npcs/yimowangdian_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	543	异魔近战	Npcs/mohuaqingbubing			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	544	异魔远程	Npcs/mohuagongjianshou			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	545	召唤陷阱透明怪	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	546	魔王像	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	547	逃脱点	Players/KingArthur			0.2	0	0	0	0	0	0	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	548	魔巢	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	549	蜘蛛	Npcs/zhizhuguai_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	550	净化水晶	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	551	拜火圣女	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	552	强盗	Npcs/qiangdao_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	553	宝藏	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	554	测试临时模型（替换斯巴达）	Players/KingArthur			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	555	阵眼	Npcs/daozei_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	556	魔化重锤兵	Npcs/mohuazhongchuibing_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	557	魔化海盗新兵	Npcs/mohuahaidaoxinbing_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	558	堕落骑士	Npcs/duoluoqishi_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	559	魔化重甲步兵	Npcs/mohuazhongjiabubing_001			0.8	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	560	恶鬼	Npcs/egui_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	561	吉尔	Npcs/jier_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	562	兰斯洛特	Npcs/lansiluote_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	563	荆轲怪	Npcs/jingke_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	564	测试_步兵	Npcs/mohuaqingbubing_test			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	565	测试——盾兵	Npcs/mohuadunfubing_test			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	566	推图Level82副本凯撒	Npcs/kaisa_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	567	推图Level82副本重锤兵	Npcs/mohuazhongchuibing_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	568	推图Level82副本重甲兵	Npcs/mohuazhongjiabubing_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	569	推图Level83副本巨型BOSS	Npcs/boss_rongyanguai_001			0.2	1.8	0	0.7	0	15	10	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	570	铁拳	Npcs/quanxi_tiequan_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	571	地狱男爵	Npcs/quanxi_linglundunjiang_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	572	灵魂盾将	Npcs/quanxi_diyunanjue_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	573	冰原战士	Npcs/jianxi_bingyuanzhanshi_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	574	弑神者	Npcs/jianxi_shishenzhe_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	575	死灵战士	Npcs/jianxi_silingzhanshi_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	576	亡灵将军	Npcs/jianxi_wanglingjiangjun_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	577	地狱男爵	Npcs/quanxi_diyunanjue_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	578	灵轮盾将	Npcs/quanxi_linglundunjiang_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	579	铁拳	Npcs/quanxi_tiequan_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	580	骷髅弓手	Npcs/newguai_kulougongshou_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	581	密林猎手	Npcs/newguai_milinlieshou_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	582	熔岩双刀	Npcs/newguai_rongyanshuangdao_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	583	虚无刀魔	Npcs/newguai_xuwudaomo_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	584	异魔王殿	Npcs/quanxi_yimowangdian_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	585	机械狼王	Npcs/shouzhuaxi_jixielangwang_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	586	悬石怪	Npcs/newguai_xuanshiguai_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	587	虚无统领	Npcs/newguai_xuwutongling_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	588	磁悬机械兵	Npcs/newguai_cixuanjixiebing_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	589	投弹手	Npcs/touzhi_toudanshou_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	590	血孱斧魔	Npcs/shuangshouchuixi_xuecanfumo_001			0.5	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	591	冰狼	Npcs/shouzhuaxi_binglang_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	592	碎魂者	Npcs/zhongchuixi_suihunzhe_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	593	机械战士	Npcs/zhongchuixi_jixiezhanshi_001			0.7	1.8	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	594	爆裂魔	Npcs/touzhi_baoliemo_001			0.2	1.8	0	0.7	0	0.5	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	595	冰原战士	Npcs/jianxi_bingyuanzhanshi_001			0.7	3	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint
+	596	沙漠斧王	Npcs/boss_shuangfu_001			1	3	0	0.7	0	0.7	1.9	0	hitpoint	Bip01/Bip01 Footsteps	Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/body_damage	hitpoint	hitpoint	hitpoint

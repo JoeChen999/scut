@@ -1,0 +1,7 @@
+#	活动配置表																					
+#	Id		Name	HintWhenClose	Description1	Description2	Icon	UnlockLevel	RepeatType	StartTime	EndTime	DisplayWhenClose	RewardExp	RewardCoin	RewardItem0	RewardItem1	RewardItem2	RewardItem3	RewardItem4	RewardItem5	RewardItem6	RewardItem7
+#	int		string	string	string	string	int	int	int	string	string	bool	int	int	int	int	int	int	int	int	int	int
+#	活动ID	策划备注	活动名称	关闭时提示	活动描述1	活动描述2	活动图标	解锁等级	重复类型	开始时间	结束时间	关闭时是否显示	奖励经验	奖励金币	奖励物品1	奖励物品2	奖励物品3	奖励物品4	奖励物品5	奖励物品6	奖励物品7	奖励物品8
+	1	翻翻棋	ACTIVITY_NAME_CHESS	ACTIVITY_NAME_CHESS_CLOSE	ACTIVITY_NAME_CHESS_DESCRIPTION1	ACTIVITY_NAME_CHESS_DESCRIPTION2	20001	0	1	"""2016-01-01 00:00:01"""	"""2016-01-01 23:59:59"""	TRUE	100	100	114001	114011	115002	115008	113002	114011	115002	-1
+	2	装备锻造	ACTIVITY_NAME_FOUNDRY	ACTIVITY_NAME_FOUNDRY_CLOSE	ACTIVITY_NAME_FOUNDRY_DESCRIPTION1	ACTIVITY_NAME_FOUNDRY_DESCRIPTION2	20002	0	1	"""2016-01-01 00:00:01"""	"""2016-01-01 23:59:59"""	TRUE	100	100	114002	114012	115003	115009	113003	113003	115009	113003
+	4	时空裂缝	ACTIVITY_NAME_COSMOS	ACTIVITY_NAME_COSMOS_CLOSE	ACTIVITY_NAME_COSMOS_DESCRIPTION1	ACTIVITY_NAME_COSMOS_DESCRIPTION2	20004	0	1	"""2016-01-01 00:00:02"""	"""2016-01-01 23:59:59"""	TRUE	120	240	114001	-1	-1	-1	-1	-1	-1	-1

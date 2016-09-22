@@ -1,0 +1,12 @@
+#	副本组配置表					
+#	Id		Name	Description	Money	ChapterIconName
+#	int		string	string	int	string
+#	副本组编号	策划备注	副本名称	副本描述	获得钻石数量	副本选择界面对应的图片名称
+	1	测试副本组	INSTANCE_GROUP_NAME_1	INSTANCE_GROUP_DESC_1	0	Instance/chapter_01
+	2	测试副本组	INSTANCE_GROUP_NAME_2	INSTANCE_GROUP_DESC_2	0	Instance/chapter_02
+	3	测试副本组	INSTANCE_GROUP_NAME_3	INSTANCE_GROUP_DESC_3	0	Instance/chapter_03
+	4	测试副本组	INSTANCE_GROUP_NAME_4	INSTANCE_GROUP_DESC_4	0	Instance/chapter_04
+	5	测试副本组	INSTANCE_GROUP_NAME_5	INSTANCE_GROUP_DESC_5	0	Instance/chapter_05
+	6	测试副本组	INSTANCE_GROUP_NAME_6	INSTANCE_GROUP_DESC_6	0	Instance/chapter_06
+	7	测试副本组	INSTANCE_GROUP_NAME_7	INSTANCE_GROUP_DESC_7	0	Instance/chapter_07
+	8	测试副本组	INSTANCE_GROUP_NAME_8	INSTANCE_GROUP_DESC_8	0	Instance/chapter_08

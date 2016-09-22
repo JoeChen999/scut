@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceVersionInfo ApplicableGameVersion="0.1.0" LatestInternalResourceVersion="177">
+  <StandaloneWindows Length="282182" HashCode="1121387221" ZipLength="115260" ZipHashCode="2021339982" />
+  <iOS Length="282182" HashCode="1567398881" ZipLength="115316" ZipHashCode="1098104637" />
+  <Android Length="282182" HashCode="1066444811" ZipLength="115306" ZipHashCode="108022912" />
+</ResourceVersionInfo>

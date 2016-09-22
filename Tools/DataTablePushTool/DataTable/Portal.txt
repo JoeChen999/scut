@@ -1,0 +1,7 @@
+#	传送点配置表							
+#	Id		ResourceName	PositionX	PositionY	Angle	Radius	EffectNameOnTrigger
+#	int		string	float	float	float	float	string
+#	传送点编号	策划备注	资源名称	坐标位置X	坐标位置Y	朝向	半径	触发时的特效名称
+	1		Portal	16.72	5.26	-55.41	1	Characters/Players/Merlin/effects_hero_001_merlin_dodge_bullet
+	2		Portal	7.81	9.21	-13.49	1	Characters/Players/Merlin/effects_hero_001_merlin_dodge_bullet
+	3		Portal	3.82	18.24	-56.72	1	Characters/Players/Merlin/effects_hero_001_merlin_dodge_bullet

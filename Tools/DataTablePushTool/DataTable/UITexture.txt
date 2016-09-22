@@ -1,0 +1,38 @@
+#	界面贴图配置表		
+#	Id		TexturePath
+#	int		string
+#	编号	策划备注	贴图路径
+#	英雄卡牌		
+	1	亚瑟王	HeroCard/image_arthur
+	2	荆轲	HeroCard/image_jingke
+	4	卡特琳娜	HeroCard/image_katarina
+	5	梅林	HeroCard/image_melin
+	6	牛魔王	HeroCard/image_niumowang
+	7	黑胡子	HeroCard/image_blackbeard
+	10	鞭女	HeroCard/image_biannv
+	12	残忍王	HeroCard/image_canrenwang
+	13	达芬奇	HeroCard/image_davinci
+	14	范海辛	HeroCard/image_vanhelsing
+	15	火女	HeroCard/image_huonv
+	16	岳飞	HeroCard/image_yuefei
+	17	日本武士	HeroCard/image_ribenwushi
+	19	噬毒者	HeroCard/image_penduzhe
+	21	链球男	HeroCard/image_lianqiunan
+	22	花木兰	HeroCard/image_huamulan
+	10000	初始英雄图	HeroCard/image_hero_default
+#	副本		
+	10001	通用	Instance/instance_001
+	10002	机械电场	Instance/instance_002
+	10003	熔岩地穴	Instance/instance_003
+	10004	森林	Instance/instance_004
+	10005	冰原遗迹	Instance/instance_005
+	10006	沙漠野外	Instance/instance_006
+#	活动列表		
+	20001	翻翻棋	Activity/image_chessman
+	20002	千锤百炼	Activity/image_foundry
+	20003	离线竞技	Activity/image_pvp_offline
+	20004	时空之刃	Activity/image_cosmos
+#	时空之刃		
+	2000401	时空之刃1星	Activity/image_cosmos_1
+	2000402	时空之刃2星	Activity/image_cosmos_1
+	2000403	时空之刃3星	Activity/image_cosmos_1

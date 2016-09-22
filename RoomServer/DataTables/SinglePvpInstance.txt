@@ -1,0 +1,5 @@
+#	单人 PVP 副本配置表														
+#	Id		Name	Description	SceneId	TimerType	TimerDuration	TimerAlert	SpawnPointX	SpawnPointY	SpawnAngle	SpawnPointX2	SpawnPointY2	SpawnAngle2	SceneRegionMaskId
+#	int		string	string	string	int	int	int	float	float	float	float	float	float	int
+#	副本编号	策划备注	副本名称	副本描述	场景编号	定时器类型（1-正计时；2-倒计时）	定时器时长	定时器报警时长	出生点X坐标	出生点Y坐标	出生朝向	出生点X坐标2	出生点Y坐标2	出生朝向2	加载区域掩码
+	1	测试副本	INSTANCE_NAME_1	INSTANCE_DESC_1	39	2	120	10	-9.12	-3.13	0	9.14	3.08	180	0

@@ -1,0 +1,8 @@
+﻿#	字典配置表		
+#	Key		Value
+#	string		string
+#	字典主键	策划备注	字典内容，可使用转义符
+	OA_NAME_WEEKLY_SIGN_IN		七日登录
+	OA_DESC_WEEKLY_SIGN_IN		七日登录描述
+	OA_NAME_MONTHLY_SIGN_IN		月登录
+	OA_DESC_MONTHLY_SIGN_IN		月登录描述

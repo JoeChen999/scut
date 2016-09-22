@@ -1,0 +1,13 @@
+{
+  "lobby_server": "lobby.server.genesis.antinc.cn",
+  "mysql_user": "root",
+  "mysql_password": "antinc2014",
+  "mysql_host": "rm-2zed5795tjc418v0d.mysql.rds.aliyuncs.com",
+  "game_db":"game-db",
+  "master_db":"master-db",
+  "bi_db":"bi-db",
+  "root_path":"/var/game/AdminTool/AdminPage/",
+  "redis_host": "redis-internal.skfz.antinc.cn",
+  "redis_port": 6379,
+  "redis_pwd": "b4b69416cb2c4910:Antinc2014"
+}

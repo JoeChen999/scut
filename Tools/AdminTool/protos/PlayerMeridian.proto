@@ -1,0 +1,5 @@
+message PlayerMeridian
+{
+    required int32 UserId = 1;
+    required string UnlockedMeridians= 2;
+}

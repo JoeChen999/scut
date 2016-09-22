@@ -1,0 +1,9 @@
+#	职业配置表			
+#	Id		Name	IconSpriteName
+#	int		string	string
+#	编号	策划备注	名称字符串	图标精灵图名称
+	1	战士	UI_TEXT_PROFESSION_1	icon_profession_001
+	2	刺客	UI_TEXT_PROFESSION_2	icon_profession_002
+	3	力士	UI_TEXT_PROFESSION_3	icon_profession_003
+	4	远程	UI_TEXT_PROFESSION_4	icon_profession_004
+	5	法师	UI_TEXT_PROFESSION_5	icon_profession_005

@@ -1,0 +1,51 @@
+﻿p {
+    font-family: Arial, 宋体;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+    cursor: default;
+}
+
+div {
+    font-family: Arial, 宋体;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+    cursor: default;
+}
+
+td {
+    font-family: Arial, 宋体;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+    cursor: default;
+}
+
+th {
+    font-family: Arial, 宋体;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+    cursor: default;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+    a:visited {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #FF0000;
+        text-decoration: underline;
+    }

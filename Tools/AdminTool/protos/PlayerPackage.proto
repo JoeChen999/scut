@@ -1,0 +1,7 @@
+message PlayerPackage
+{
+    required int32 UserId = 1;
+    required string Inventories = 2;
+    required string Gears = 3;
+    required string Souls = 4;
+}
